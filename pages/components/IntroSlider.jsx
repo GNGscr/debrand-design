@@ -1,52 +1,41 @@
-import { useLayoutEffect, useRef } from "react";
+"use client";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import Hero from '../components/Hero';
 
-export default function IntroSlider({ geistSpaceGrotesk }) {
-    const comp = useRef(null);
-
-    useLayoutEffect(() => {
+export default function IntroSlider({ media }) {
+  const comp = useRef(null);
+  
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
       let ctx = gsap.context(() => {
         const t1 = gsap.timeline();
-        t1.from('#intro-slider', {
-          xPercent: '-100',
-          duration: 1.3,
-          delay: .3
-        }).from(['#title-1', '#title-2', '#title-3'], {
-          opacity: 0,
-          y: '+=30',
-          stagger: .5
-        }).to(['#title-1', '#title-2', '#title-3'], {
-          opacity: 0,
-          y: '-=30',
-          delay: .3,
-          stagger: .5 // allows each animation in the array to have a slight delay from one another
-        }).to('#intro-slider', {
-          xPercent: '-100',
-          duration: 1.3
-        }).from('#welcome', {
-          opacity: 0,
-          duration: .5
-        })
+        t1.from('#intro-slider', { xPercent: '-100', duration: .75, delay: .15 })
+        .from(['#title-1', '#title-2', '#title-3'], { display: 'flex', opacity: 0, y: '+=30', stagger: .2 })
+        .to(['#title-1', '#title-2', '#title-3'], { opacity: 0, y: '-=30', delay: .015, stagger: .25, })
+        .to('#intro-slider', { xPercent: '-100', duration: 1.15 })
+        .to(['#title-1', '#title-2', '#title-3'], { display: 'none' })
+        .from('#inner-hero-title',{ opacity: 0, duration: .5, yPercent: '+=100', rotate: 5 }, "<-0.75")
       }, comp);
       return () => ctx.revert();
-    });
-    return (
-        <div className="relative" ref={comp}>
-            <div 
-              id="intro-slider"
-              className={`
-                h-screen p-10 bg-gray-50 absolute top-0 left-0
-                --font-space-grotesk z-10 w-full flex flex-col 
-                gap-10 tracking-tight`}>
-              <h1 id="title-1" className="text-9xl font-bold">Software Engineer</h1>
-              <h1 id="title-2" className="text-9xl font-bold">Designer</h1>
-              <h1 id="title-3" className="text-9xl font-bold">Freelanser</h1>
-            </div>
-            <div className={`${geistSpaceGrotesk.variable} h-screen flex bg-gray-950 justify-center place-items-center`}>
-              <h1 id="welcome" className="text-9xl font-bold text-gray-100 --font-space-grotesk">Daniel Ehrlich.</h1>
-            </div>
-            <div className="top-screen h-screen left-0 bg-red-50 relative"> 
-        </div>
+    }
+  }, []);
+
+  return (
+    <div className="relative" ref={comp}>
+      <div 
+        id="intro-slider"
+        className={`h-[100vh] min-h-screen p-4 md:p-20 bg-gray-50 absolute top-0 left-0
+          z-10 w-full flex flex-col gap-4 md:gap-10 tracking-tight justify-start`}>
+          <h1 id="title-1" className="text-4xl md:text-9xl font-bold">Software Engineer</h1>
+          <h1 id="title-2" className="text-4xl md:text-9xl font-bold">Designer</h1>
+          <h1 id="title-3" className="text-4xl md:text-9xl font-bold">Freelanser</h1>
       </div>
-    );
+      <div 
+        style={{clipPath: "polygon(0% 0, 100% 0, 100% 100%, 0 100%)"}} 
+        className={`h-screen flex bg-red-300 justify-center place-items-center`}>
+        <Hero media={media} />
+      </div>
+    </div>
+  );
 }

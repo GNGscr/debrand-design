@@ -1,20 +1,35 @@
-// import Image from "next/image";
-import localFont from "next/font/local";
+'use client';
 import IntroSlider from "./components/IntroSlider";
-
-const geistSpaceGrotesk = localFont({
-  src: "./fonts/SpaceGrotesk-Bold.ttf",
-  variable: "--font-space-grotesk",
-  weight: "600",
-});
+import { useState, useRef, useEffect } from "react";
+import Script from 'next/script';
 
 export default function Home() {
-  return (
-    <div>
-      <IntroSlider geistSpaceGrotesk={geistSpaceGrotesk}></IntroSlider>
-      <div className="top-screen h-screen left-0 bg-red-50 relative">
+  let ref = useRef(null);
+  const [ media, setMedia ] = useState("desktop");
 
+  useEffect(() => {
+    const { width } = ref.current.getBoundingClientRect();    
+    setMedia(width < 680 ? "mobile" : "desktop") 
+  }, []);
+
+  return (
+    <>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-3JQ1HLK15T"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-3JQ1HLK15T');
+        `}
+      </Script>
+      <div ref={ref}>
+        <IntroSlider media={media} />
       </div>
-    </div>
+    </>
   );
 }
