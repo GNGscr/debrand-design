@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: '--font-nerko-one-regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/pages/fonts/NerkoOne-Regular.ttf');
+  src: url('/pages/fonts/NerkoOne-Regular.ttf') format('truetype');
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --main-font: '--font-nerko-one-regular';
+}
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.header-ul {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+}
+.hero-items > .item {
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+.created-by {
+  margin-top: 0.5rem;
+  scale: 0.575;
+  margin-bottom: 4rem;
+  cursor: default;
+}
+.created-by,
+.debrand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.debrand-logo > span:nth-child(1) {
+  position: relative;
+  font-size: 6.5rem;
+  margin-left: 0.005rem;
+  margin-top: 2.65rem;
+  color: #fff;
+}
+.debrand-logo > span:nth-child(2) {
+  color: #000;
+  opacity: 0.9;
+}
+.debrand-logo > span:nth-child(3) {
+  color: #000;
+  opacity: 0.9;
+}
+.debrand-logo > span:nth-child(9) {
+  color: #fff;
+  font-size:  5rem;
+  margin-bottom: 1.5rem;
+}
+.debrand-logo > span:nth-child(10),
+.debrand-logo > span:nth-child(11),
+.debrand-logo > span:nth-child(12),
+.debrand-logo > span:nth-child(13),
+.debrand-logo > span:nth-child(14),
+.debrand-logo > span:nth-child(15) {
+  color: #000;
+  opacity: 0.825
+}
+.debrand-logo > span:nth-child(16) {
+position: relative;
+font-size: 6.5rem;
+margin-left: 0.005rem;
+margin-top: 2.65rem;
+color: #fff;
+}
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.link-cta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+.cta-btn {
+  cursor: pointer;
+}
+.stars-button {
+  transition: .5s ease-in-out;
+}
+.stars-button:hover {
+  animation: resize .5s ease forwards; 
+}
+.star-icon:hover {
+  animation: active-5 .5s linear forwards;
+}
+
+@keyframes icon-rotate {
+  0% { rotate: 17.5deg; }
+  50% { rotate: -17.5deg; }
+  100% { rotate: 0; }
+}
+
+@keyframes resize {
+  0% { scale: 1; }
+  50% { scale: 1.05; }
+  100% { scale: 1; }
+}
+
+@keyframes active-5 {
+  15% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  30% {
+    transform: rotate(360deg) scale(1.2);
+  }
+  70% {
+    transform: rotate(360deg) translateY(14%) scaleY(.72);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media (max-width: 680px) {
+  .social-links {
+    flex-direction: column;
+  }
+  .debrand-logo {
+    margin-left: 0;
+  }
+  .hero-layout {
+    margin-top: 3.5rem;
+  }
+  .main-logo-wrp {
+    margin-top: -11rem;
+    margin-left: -2.5rem;
+  }
+  .link-text {
+    font-size: 2.5rem;
+  }
+  .links-wrapper {
+    top: 0;
+  }
+  #intro-slider {
+    padding-top: 7.75rem;
+  }
+  #title-1, #title-2, #title-3 {
+    padding: 4rem 0.75rem;
+    font-size: 2.25rem;
+  }
+}
