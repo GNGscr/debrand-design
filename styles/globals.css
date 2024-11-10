@@ -27,7 +27,7 @@ body {
     text-wrap: balance;
   }
 }
-.header-ul {
+.header-ul:hover {
   font-size: 1.25rem;
   text-transform: capitalize;
 }
@@ -88,6 +88,8 @@ color: #fff;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 .link-cta {
   display: flex;
@@ -97,7 +99,26 @@ color: #fff;
 }
 .cta-btn {
   cursor: pointer;
+  font-size: 1.15rem;
+  transition: .25s ease-in-out;
+  position: relative;
 }
+.cta-btn > svg {
+  rotate: 90deg;
+  margin-top: 3.5px;
+  scale: 1;
+}
+.group > div > div > a > svg {
+  transform: translateY(0rem);
+  opacity: 0;
+}
+.group:hover  > div > div > a > svg {
+  /* transition-delay: .3s; */
+  transform: translateY(-0.1rem);
+  opacity: 1;
+}
+ 
+ 
 .stars-button {
   transition: .5s ease-in-out;
 }
@@ -106,6 +127,18 @@ color: #fff;
 }
 .star-icon:hover {
   animation: active-5 .5s linear forwards;
+}
+
+/* Disable blue highlight on button click */
+button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* You can do the same for links */
+a {
+-webkit-tap-highlight-color: transparent;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 @keyframes icon-rotate {
@@ -137,14 +170,18 @@ color: #fff;
 
 
 @media (max-width: 680px) {
+  .group {
+    padding-top: 1.5rem;
+  }
   .social-links {
     flex-direction: column;
+    gap: 0;
   }
   .debrand-logo {
     margin-left: 0;
   }
   .hero-layout {
-    margin-top: 3.5rem;
+    margin-top: 4.5rem;
   }
   .main-logo-wrp {
     margin-top: -11rem;
@@ -154,13 +191,20 @@ color: #fff;
     font-size: 2.5rem;
   }
   .links-wrapper {
-    top: 0;
+    top: 1rem;
+  }
+  .main-logo-wrp {
+    padding-top: 15vh !important;
+  }
+  .created-by {
+    scale: 0.6;
+    margin-top: 0.65rem;
   }
   #intro-slider {
     padding-top: 7.75rem;
   }
   #title-1, #title-2, #title-3 {
-    padding: 4rem 0.75rem;
-    font-size: 2.25rem;
+    padding: 5rem 0.75rem;
+    font-size: 2.5rem;
   }
 }
