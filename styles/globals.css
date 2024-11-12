@@ -171,7 +171,7 @@ a {
 
 @media (max-width: 680px) {
   .group {
-    padding-top: 1.5rem;
+    padding: 0rem;
   }
   .social-links {
     flex-direction: column;
@@ -184,18 +184,16 @@ a {
     margin-top: 4.5rem;
   }
   .main-logo-wrp {
-    margin-top: -11rem;
-    margin-left: -2.5rem;
+    margin-top: -13rem;
+    margin-left: -2rem;
   }
   .link-text {
     font-size: 2.5rem;
   }
   .links-wrapper {
-    top: 1rem;
+    top: 0rem;
   }
-  .main-logo-wrp {
-    padding-top: 15vh !important;
-  }
+  .main-logo-wrp {}
   .created-by {
     scale: 0.6;
     margin-top: 0.65rem;
@@ -204,7 +202,7 @@ a {
     padding-top: 7.75rem;
   }
   #title-1, #title-2, #title-3 {
-    padding: 5rem 0.75rem;
+    padding: 3rem 0.75rem;
     font-size: 2.5rem;
   }
 }
