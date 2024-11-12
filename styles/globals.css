@@ -159,15 +159,10 @@ color: #fff;
 
 @media (max-width: 680px) {
   .group {
-    padding: 0.35rem;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    padding: 0.65rem 0;
   }
   .group:focus {outline:none;}
-  /* .group, .group > div {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  } */
+
   .social-links {
     flex-direction: column;
     gap: 0;
@@ -186,10 +181,10 @@ color: #fff;
     font-size: 1.85rem;
   }
   .links-wrapper {
-    top: 0rem;
+    top: 0.25rem;
   }
   .main-logo-wrp {
-    padding-top: 5rem !important;
+    padding-top: 6.5rem !important;
   }
   .created-by {
     scale: 0.6;
@@ -202,15 +197,5 @@ color: #fff;
     padding: 3rem 0.75rem;
     font-size: 2.5rem;
   }
-  /* Disable blue highlight on button click */
-/* button {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-} */
-
-/* You can do the same for links */
-/* a {
--webkit-tap-highlight-color: transparent;
--webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-} */
+  
 }
