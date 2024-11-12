@@ -129,18 +129,6 @@ color: #fff;
   animation: active-5 .5s linear forwards;
 }
 
-/* Disable blue highlight on button click */
-button {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-/* You can do the same for links */
-a {
--webkit-tap-highlight-color: transparent;
--webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
 @keyframes icon-rotate {
   0% { rotate: 17.5deg; }
   50% { rotate: -17.5deg; }
@@ -171,7 +159,11 @@ a {
 
 @media (max-width: 680px) {
   .group {
-    padding: 0rem;
+    padding: 0.35rem;
+  }
+  .group, .group > div {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   .social-links {
     flex-direction: column;
@@ -188,7 +180,7 @@ a {
     margin-left: -2rem;
   }
   .link-text {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .links-wrapper {
     top: 0rem;
@@ -205,4 +197,15 @@ a {
     padding: 3rem 0.75rem;
     font-size: 2.5rem;
   }
+  /* Disable blue highlight on button click */
+button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* You can do the same for links */
+a {
+-webkit-tap-highlight-color: transparent;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 }
