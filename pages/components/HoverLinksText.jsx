@@ -168,7 +168,7 @@ const Link = ({ heading, subheading, href, cta, media, index }) => {
             </motion.span>
           ))}
         </motion.span>
-        <div className={`flex justify-center align-center w-[100%] flex-col`}>
+        <div className={`link-cta-wrp flex justify-center align-center w-[100%] flex-col`}>
           <span className={`link-cta relative z-3 block text-[1.2rem] text-[transparent]
             transition-colors duration-500 group-hover:text-neutral-700
             w-fit whitespace-nowrap font-bold w-[100%]`}>
@@ -199,6 +199,7 @@ const Link = ({ heading, subheading, href, cta, media, index }) => {
           left,
           translateX: "15%",
           translateY: media === "mobile" ? "-165%" : "-85%",
+          display: media === "mobile" ? "none" : "flex"
         }}
         variants={{
           initial: { scale: 0, rotate: "12.5deg" },
@@ -208,7 +209,6 @@ const Link = ({ heading, subheading, href, cta, media, index }) => {
         className="absolute ml-[-12.5rem] h-24 w-32 rounded-lg object-cover md:h-48 md:w-64"
         alt={`Image representing a link for ${heading}`}
       >
-{/* <Image src={({ LINKEDIN, PHONE, WHATSAPP, EMAIL })[heading] || ''} />    */}
         {
           heading === "LINKEDIN"
             ? <a href={href} target="_blank" rel="noopener noreferrer"

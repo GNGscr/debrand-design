@@ -27,6 +27,7 @@ body {
     text-wrap: balance;
   }
 }
+
 .header-ul:hover {
   font-size: 1.25rem;
   text-transform: capitalize;
@@ -91,6 +92,7 @@ color: #fff;
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
+.group:focus {outline:none;}
 .link-cta {
   display: flex;
   align-items: center;
@@ -159,10 +161,11 @@ color: #fff;
 
 @media (max-width: 680px) {
   .group {
-    padding: 0.65rem 0;
+    padding: 0.7rem 0;
   }
-  .group:focus {outline:none;}
-
+  .group:focus {
+    outline:none;
+  }
   .social-links {
     flex-direction: column;
     gap: 0;
@@ -176,6 +179,10 @@ color: #fff;
   .main-logo-wrp {
     margin-top: -13rem;
     margin-left: -2rem;
+    gap: 1rem !important;
+  }
+  .link-cta-wrp > .link-cta {
+    justify-content: center;
   }
   .link-text {
     font-size: 1.85rem;
