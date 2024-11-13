@@ -171,7 +171,7 @@ const Link = ({ heading, subheading, href, cta, media, index }) => {
         <div className={`link-cta-wrp flex justify-center align-center w-[100%] flex-col`}>
           <span className={`link-cta relative z-3 block text-[1.2rem] text-[transparent]
             transition-colors duration-500 group-hover:text-neutral-700
-            w-fit whitespace-nowrap font-bold w-[100%]`}>
+            w-fit whitespace-nowrap font-bold`}>
             {subheading}
           </span>
             <motion.a

@@ -183,9 +183,10 @@ color: #fff;
   }
   .link-cta-wrp > .link-cta {
     justify-content: center;
+    width: 112.5%;
   }
   .link-text {
-    font-size: 1.85rem;
+    font-size: 1.75rem;
   }
   .links-wrapper {
     top: 0.25rem;
