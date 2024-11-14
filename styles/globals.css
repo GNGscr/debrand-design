@@ -221,6 +221,9 @@ button:focus {
 
 @media (max-width: 680px) {
 
+  main {
+    overflow-y: hidden;
+  }
   .section-transition-main {
     height: 205vh;
   }
