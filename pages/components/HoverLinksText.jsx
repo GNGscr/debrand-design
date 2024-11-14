@@ -135,7 +135,7 @@ const Link = ({ heading, subheading, href, cta, media, index }) => {
             delayChildren: 0.15,
             bounce: 0.1
           }}
-          className={`relative flex items-center justify-center z-3 block text-[0.5rem]
+          className={`social-label relative flex items-center justify-center z-3 block text-[0.5rem]
             transition-colors duration-500 group-hover:text-neutral-800 md:text-[2.85rem]
             link-text whitespace-nowrap font-bold text-[#000]
             `}

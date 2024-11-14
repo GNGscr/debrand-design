@@ -213,10 +213,17 @@ button:focus {
   text-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
+.wave-btn {
+  margin-top: 1.25rem;
+}
+
 /* MOBILE MEDIA */
 
 @media (max-width: 680px) {
 
+  .section-transition-main {
+    height: 205vh;
+  }
   .about-content {
     flex-direction: column;
     align-items: center;
@@ -250,10 +257,13 @@ button:focus {
     justify-content: space-around;
   }
   .group {
-    padding: 0.7rem 0;
+    padding: 0.5rem 0;
   }
   .group:focus {
     outline:none;
+  }
+  .header-ul > a > li > div {
+    font-size: 1rem;
   }
   .social-links {
     flex-direction: column;
@@ -269,6 +279,7 @@ button:focus {
     margin-top: -13rem;
     margin-left: -2rem;
     gap: 1rem !important;
+    padding-top: 4.5rem !important;
   }
   .link-cta-wrp > .link-cta {
     justify-content: center;
@@ -281,13 +292,13 @@ button:focus {
     top: 0.25rem;
     top: 0;
   }
-  .main-logo-wrp {
-    padding-top: 6.5rem !important;
-  }
   .created-by {
-    scale: 0.6;
+    scale: 0.45;
     /* margin-top: 0.65rem; */
     margin-top: 3rem;
+  }
+  .social-label {
+    font-size: 1.25rem;
   }
   #intro-slider {
     padding-top: 7.75rem;
@@ -301,7 +312,18 @@ button:focus {
   }
   a[href="#about"] {
     position: absolute;
-    bottom: 8rem;
+    bottom: 10rem;
+  }
+  .wave-btn {
+    margin-top: -3rem;
+  }
+  .wave-btn > span {
+    font-size: 1.75rem;
+  }
+
+  .about-me-title {
+    /* display: none; */
+    font-size: 1rem !important;
   }
   
 }

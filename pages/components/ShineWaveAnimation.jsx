@@ -5,8 +5,8 @@ const ShineWaveAnimation = ({ text }) => {
     return (
         <div>
           <motion.button
-            className={`w-full flex justify-center text-bold text-[2rem]
-              text-white transition-colors md:w-fit mt-5 z-8`}
+            className={`wave-btn w-full flex justify-center text-bold text-[2rem]
+              text-white transition-colors md:w-fit z-8`}
             style={{ minWidth: 180 }}
             initial={{ "--x":  "100%", scale: 1}}
             animate={{ "--x":  "-100%" }}
