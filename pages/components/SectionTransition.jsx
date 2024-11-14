@@ -41,10 +41,10 @@ const Section1 = ({scrollYProgress}) => {
           className={`sticky top-0 h-screen bg-black text-[3.25vw] flex flex-col
             items-center justify-center text-white pt-[10vh] pb-[0vh] mb-[5vh]`}>
             <ShineWaveAnimation text="About Me" />
-            <div className="flex gap-[15rem] mt-[1rem]">
+            <div className="about-content flex gap-[15rem] mt-[1rem]">
                 <div // style={{clipPath: "polygon(0% 0, 100% 0, 100% 100%, 0 100%)"}}
                   style={{clipPath: "xywh(0 5px 100% 75% round 15% 0)"}}
-                  className="relative w-[25vw] h-[37.5vw] mt-[1.5rem]">
+                  className="clip-path relative w-[25vw] h-[37.5vw] mt-[1.5rem]">
                     <Image 
                       className="absolute left-[1rem]"
                       src={myImg}

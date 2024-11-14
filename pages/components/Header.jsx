@@ -63,7 +63,7 @@ export default function Header() {
     return (
         <header 
           ref={comp}
-          className="flex justify-center w-full p-5 fixed z-99 top-0 left-0">
+          className="header-wrp flex justify-center p-5 fixed z-99 top-0 left-0">
             <div style={{display: 'none'}}>Left</div>
             <div id="header">
                 <ul className="header-ul flex gap-[100px]">
