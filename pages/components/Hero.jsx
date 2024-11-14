@@ -3,6 +3,52 @@ import CreatedBy from "./CreatedBy";
 import HoverLinksText from "./HoverLinksText";
 
 export default function Hero({ media }) {
+
+    const hoverStatesAnimations = {
+        initial: {
+            opacity: 0,
+            rotateX: 0,
+            rotateY: 0,
+            rotateZ: 0,
+        },
+        animate: {
+            opacity: 1,
+            transition: {
+                duration: 0.5,
+                delay: 5.85,
+                once: true
+            }
+        },
+        whileHover: {
+            scale: 1,
+            rotateZ: "360deg",
+            transition: {
+                duration: 0.3,
+                once: true
+            }
+        },
+        whileTap: {
+            scale: 10,
+            // opacity: 0,
+            transition: {
+                duration: 5
+            }
+        }
+    };
+
+    const handleClick = (e) => {
+        e.preventDefault(); // Prevent default anchor behavior
+
+        // Scroll to the section after the animation completes
+        setTimeout(() => {
+          const target = document.getElementById("about");
+          if (target) {
+            const targetPosition = target.getBoundingClientRect().top + window.scrollY;
+            window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+          }
+        }, 300); // Match this duration with the sectionAnimation duration
+      }
+
     return (
         <div id="home" className="h-screen w-full bg-red-300 flex flex-col gap-8 tracking-tight justify-start items-center fixed">
             <div className="hero-layout h-[400px] bg-red w-[100%] flex gap-2.5  pr-10 pl-10 mt-[7.5rem]">
@@ -107,6 +153,20 @@ export default function Hero({ media }) {
                                 <HoverLinksText media={media} />
                             </div>
                         </div>
+                        <a href="#about"
+                          onClick={handleClick}
+                          style={{ prespective: 1000 }}
+                          className={`flex justify-center align-center
+                            w-fit fixed bottom-12 text-black font-bold text-3xl`}
+                        >   
+                            <motion.div 
+                              { ...hoverStatesAnimations }
+                              style={{ borderRadius: "50%" }}
+                              className="relative p-2 border-2 border-[#000]"
+                              >
+                                <svg style={{rotate: "90deg"}} width="24" height="24" stroke="#000" strokeWidth="1px"  xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+                            </motion.div>
+                        </a>
                     </div>
                 </div>
             </div>

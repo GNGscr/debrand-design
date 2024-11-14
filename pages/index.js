@@ -1,6 +1,8 @@
 'use client';
-import IntroSlider from "./components/IntroSlider";
 import { useState, useRef, useEffect } from "react";
+import IntroSlider from "./components/IntroSlider";
+import SectionTransition from './components/SectionTransition';
+import Header from "./components/Header";
 import Script from 'next/script';
 
 export default function Home() {
@@ -15,6 +17,10 @@ export default function Home() {
   return (
       <div ref={ref}>
         <IntroSlider media={media} />
+        <div className="top-screen h-screen left-0 relative">
+          <SectionTransition></SectionTransition>
+        </div>
+        <Header />
       </div>
   );
 }

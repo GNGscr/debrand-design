@@ -9,11 +9,21 @@
   src: url('/pages/fonts/NerkoOne-Regular.ttf');
   src: url('/pages/fonts/NerkoOne-Regular.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'almoni-dl';
+  font-weight: 700; /*(bold)*/
+  font-style: normal;
+  src: url('https://assets.kalir.co.il/fonts/almoni-dl-aaa-700.eot');
+  src: url('https://assets.kalir.co.il/fonts/almoni-dl-aaa-700.eot?#iefix') format('embedded-opentype'), 
+      url('https://assets.kalir.co.il/fonts/almoni-dl-aaa-700.woff') format('woff'), 
+      url('https://assets.kalir.co.il/fonts/almoni-dl-aaa-700.ttf') format('truetype');
+  }
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
   --main-font: '--font-nerko-one-regular';
+  --secondary-font: 'almoni-dl';
 }
 body {
   color: var(--foreground);
@@ -158,6 +168,38 @@ color: #fff;
   }
 }
 
+a:focus,
+button:focus {
+  outline: none;
+}
+
+/* hero */
+
+.header-ul {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.hero-items > .item {
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+/* header */
+
+#header > ul > li {
+  overflow: hidden;
+  /* cursor: pointer; */
+}
+
+.section-transition-main {
+  background-color: rgb(45, 45, 45);
+}
+.content h1 {
+  text-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* MOBILE MEDIA */
 
 @media (max-width: 680px) {
   .group {
