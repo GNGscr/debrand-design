@@ -24,7 +24,7 @@ export default function SectionTransition() {
     }, []);
 
     return (
-      <div ref={container} className="relative h-[205vh] section-transition-main">
+      <div ref={container} className="relative section-transition-main">
         <Section1 scrollYProgress={scrollYProgress} />
         <Section2 scrollYProgress={scrollYProgress} />
       </div>
