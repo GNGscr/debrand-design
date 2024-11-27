@@ -2,7 +2,6 @@
 import { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import { easeInOut, motion, useTransform, useScroll } from 'framer-motion';
-import { setGlobalColor } from '../config';
 
 export default function Header() {
     const comp = useRef(null);
@@ -97,7 +96,6 @@ const ZoopEffect = ({ children, href }) => {
     { ease: (t) => Math.round(t) }
   );
   useEffect(() => {
-    setGlobalColor(color);
   }, [color]);
 
   const boolean = useTransform(
