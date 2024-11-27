@@ -5,12 +5,12 @@ const ShineWaveAnimation = ({ text }) => {
     return (
         <div>
           <motion.button
-            className={`wave-btn w-full flex justify-center text-bold text-[2rem]
-              text-white transition-colors md:w-fit z-8`}
+            className={`wave-btn w-full flex justify-center text-bold text-[1.75rem]
+              text-white transition-colors md:w-fit z-8 uppercase`}
             style={{ minWidth: 180 }}
             initial={{ "--x":  "100%", scale: 1}}
             animate={{ "--x":  "-100%" }}
-            whileTap={{ scale: 0.97 }}
+            whileTap={{ scale: 1 }}
             transition={{
               repeat: Infinity,
               repeatType: "loop",

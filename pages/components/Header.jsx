@@ -2,6 +2,7 @@
 import { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import { easeInOut, motion, useTransform, useScroll } from 'framer-motion';
+import { setGlobalColor } from '../config';
 
 export default function Header() {
     const comp = useRef(null);
@@ -70,6 +71,7 @@ export default function Header() {
                   <a href="home" onClick={e => handleClick(e, "home")} id="header-li-1"><li><ZoopEffect>Home</ZoopEffect></li></a>
                   <a href="about" onClick={e => handleClick(e, "about")} id="header-li-2"><li><ZoopEffect>About</ZoopEffect></li></a>
                   <a href="menifest" onClick={e => handleClick(e, "menifest")} id="header-li-3"><li><ZoopEffect>menifest</ZoopEffect></li></a>
+                  <a href="projects" onClick={e => handleClick(e, "projects")} id="header-li-3"><li><ZoopEffect>projects</ZoopEffect></li></a>
                 </ul>
             </div>
             <div style={{display: 'none'}}>Right</div>
@@ -90,17 +92,24 @@ const ZoopEffect = ({ children, href }) => {
   // Set the color to switch by toggle (ease fnc) between sections
   const color = useTransform(
     scrollYProgress,
-    [0, 0.1275, 0.5, 0.8215, 1],
-    ["#000", "#000", "rgb(252 165 165)", "#000", "#000"],
+    [0, 0.18, 0.2525, 0.665, 0.857, 1],
+    ["#000", "#000", "#ddd", "#000", "rgb(252 165 165)", "rgb(252 165 165)"],
     { ease: (t) => Math.round(t) }
   );
+  useEffect(() => {
+    setGlobalColor(color);
+  }, [color]);
 
-  // const lineHeight = useTransform(
-  //   scrollYProgress,
-  //   [0, 0.1275, 0.5, 0.8215, 1],
-  //   [0.8, 0.8, 0.7, 0.8, 0.8],
-  //   { ease: (t) => Math.round(t) }
-  // );
+  const boolean = useTransform(
+    scrollYProgress,
+    [0, 0.18, 0.2525, 0.665, 0.857, 1],
+    ['false', 'false', 'false', 'true', 'false', 'false'],
+    { ease: (t) => Math.round(t) }
+  );
+  // useEffect(() => {
+  //   console.log(scrollYProgress.current);
+  // }, [scrollYProgress]);
+  
     return <motion.div 
             initial="initial"
             whileHover="hovered"

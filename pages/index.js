@@ -9,6 +9,14 @@ export default function Home() {
   let ref = useRef(null);
   const [ media, setMedia ] = useState("desktop");
 
+  // let [menuIsActive, setMenuIsActive] = useState(false);
+
+  // useEffect(() => {
+  //   setMenuIsActive(true)
+  //   setTimeout(() => { setMenuIsActive(false) }, 3000);
+
+  // }, []);
+
   useEffect(() => {
     const { width } = ref.current.getBoundingClientRect();    
     setMedia(width < 680 ? "mobile" : "desktop") 

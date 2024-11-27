@@ -2,6 +2,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import Hero from '../components/Hero';
+import { motion } from "framer-motion";
 
 export default function IntroSlider({ media }) {
   const comp = useRef(null);
@@ -23,14 +24,15 @@ export default function IntroSlider({ media }) {
 
   return (
     <div className="relative" ref={comp}>
-      <div 
+      <motion.div 
         id="intro-slider"
+        initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.1}} style={{opacity: 0}}
         className={`h-[100vh] min-h-screen p-4 md:p-20 bg-gray-50 absolute top-0 left-0
           z-10 w-full flex flex-col gap-4 md:gap-10 tracking-tight justify-start`}>
           <h1 id="title-1" className="text-4xl md:text-9xl font-bold">Software Engineer</h1>
           <h1 id="title-2" className="text-4xl md:text-9xl font-bold">Designer</h1>
           <h1 id="title-3" className="text-4xl md:text-9xl font-bold">Freelanser</h1>
-      </div>
+      </motion.div>
       <div 
         style={{clipPath: "polygon(0% 0, 100% 0, 100% 100%, 0 100%)"}} 
         className={`h-screen flex bg-red-300 justify-center place-items-center`}>

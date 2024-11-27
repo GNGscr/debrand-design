@@ -5,7 +5,12 @@ import Image from "next/image";
 export default function HoverLinksText({ media }) {
 
   return (
-    <section className="p-4 md:p-8">
+    <motion.section className="p-4 md:p-8"
+      style={{ display: 'none' }}
+      initial={{ display: 'none' }}
+      animate={{ display: 'flex' }}
+      transition={{ duration: 0.1, delay: 4 }}
+      >
       <div className={`social-links mx-auto max-w-[68.5rem] flex w-[100%]
         ${media === "mobile" ? "gap-[0rem]" : "gap-[2.5rem]"}`}>
 
@@ -43,7 +48,7 @@ export default function HoverLinksText({ media }) {
         />
 
       </div>
-    </section>
+    </motion.section>
   );
 };
 
@@ -277,7 +282,7 @@ const Link = ({ heading, subheading, href, cta, media, index }) => {
           },
         }}
         transition={{ type: "spring" }}
-        className="relative z-3 p-4"
+        className="relative z-3"
       >
       </motion.div>
     </motion.div>
