@@ -7,7 +7,6 @@ import { useTransform, useScroll, motion, useAnimate, useMotionValue } from 'fra
 import Lenis from "@studio-freight/lenis";
 import ShineWaveAnimation from "./ShineWaveAnimation.jsx";
 import SectionAnimation from "./SectionAnimation";
-import { getGlobalColor } from "../config";
 
 export default function SectionTransition({}) {
 
@@ -46,7 +45,6 @@ export default function SectionTransition({}) {
 const Section1 = ({scrollYProgress}) => {
     const scale = useTransform(scrollYProgress, [0, 1], [1, 0.75]);
     const rotate = useTransform(scrollYProgress, [0, 1], [0, -5]);
-    // let globalColor = getGlobalColor();
     return (
         <motion.div
           style={{ scale, rotate }}
@@ -166,7 +164,6 @@ const Section2 = ({ scrollYProgress }) => {
 
       // if (!menuIsActive) {
       // }
-      // console.log(getGlobalColor());
       // }, []);
     }
     
