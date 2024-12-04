@@ -26,7 +26,7 @@ export default function Home() {
       <div ref={ref}>
         <IntroSlider media={media} />
         <div className="top-screen h-screen left-0 relative">
-          <SectionTransition></SectionTransition>
+          <SectionTransition media={media}></SectionTransition>
         </div>
         <Header />
       </div>

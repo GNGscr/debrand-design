@@ -8,7 +8,7 @@ import Lenis from "@studio-freight/lenis";
 import ShineWaveAnimation from "./ShineWaveAnimation.jsx";
 import SectionAnimation from "./SectionAnimation";
 
-export default function SectionTransition({}) {
+export default function SectionTransition({ media }) {
 
     const container = useRef();
     const { scrollYProgress } = useScroll({
@@ -33,21 +33,22 @@ export default function SectionTransition({}) {
     return (
       <div ref={container}
           className="relative section-transition-main">
-        <Section1 scrollYProgress={scrollYProgress} />
+        <Section1 scrollYProgress={scrollYProgress} media={media} />
         <Section2
           scrollYProgress={scrollYProgress}
+          media={media}
           // scrollYProgressNew={scrollYProgressNew}
            />
       </div>
     )
 }
 
-const Section1 = ({scrollYProgress}) => {
+const Section1 = ({scrollYProgress, media}) => {
     const scale = useTransform(scrollYProgress, [0, 1], [1, 0.75]);
     const rotate = useTransform(scrollYProgress, [0, 1], [0, -5]);
     return (
         <motion.div
-          style={{ scale, rotate }}
+          style={media === 'desktop' ? { scale, rotate } : {}}
           id="about"
           className={`sticky top-0 h-screen bg-black text-[3.25vw] flex flex-col
             items-center justify-center text-white pt-[10vh] pb-[0vh] mb-[5vh]`}>
@@ -81,7 +82,7 @@ const Section1 = ({scrollYProgress}) => {
     )
 }
 
-const Section2 = ({ scrollYProgress }) => {
+const Section2 = ({ scrollYProgress, media }) => {
 
   const [ isStartAnimation, setIsStartAnimation] = useState(false);
   const [menuIsActive, setMenuIsActive] = useState(true);
@@ -192,7 +193,7 @@ const Section2 = ({ scrollYProgress }) => {
           <motion.div
             id="menifest"
             ref={SectionScope}
-            style={{ scale, rotate }} 
+            style={media === 'desktop' ? { scale, rotate } : {}}
             className={`relative h-screen bg-gray-200 text-[3.5vw]
               flex flex-col items-center justify-center text-black pb-[2.5vh]`}>
               <div
