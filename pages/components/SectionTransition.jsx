@@ -84,7 +84,7 @@ const Section1 = ({scrollYProgress}) => {
 const Section2 = ({ scrollYProgress }) => {
 
   const [ isStartAnimation, setIsStartAnimation] = useState(false);
-  const [menuIsActive, setMenuIsActive] = useState(false);
+  const [menuIsActive, setMenuIsActive] = useState(true);
   // const [activateRive, setActivateRive] = useState(false);
   
   const firstPara = {
@@ -109,7 +109,7 @@ const Section2 = ({ scrollYProgress }) => {
   ];
 
   const inView = { opacity: 1, x: 0, y: 0 };
-  const delay = 2.7;
+  const delay = 3.5;
   const duration = 1.5;
   
   const [ scope, animate ] = useAnimate();
@@ -171,7 +171,7 @@ const Section2 = ({ scrollYProgress }) => {
       // console.log('menuIsActive: ', menuIsActive);
     //   if (menuIsActive === true) {
         // setTimeout(() => {
-          setMenuIsActive(false);
+          // setMenuIsActive(false);
         // }, 1000);
     //   }
       
@@ -300,13 +300,14 @@ const Section2 = ({ scrollYProgress }) => {
         <div
           id="projects"
           className="projects">
-          <motion.div className="projects-content relative" whileInView={() => testing()}>
+          <motion.div className="projects-content relative">
             <div className="projects-title uppercase">Projects</div>
             <motion.div
               style={{ opacity: 0 }}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 2.5 }}
+              transition={{ duration: 2.25, delay: 0.3 }}
+              onAnimationComplete={() => setMenuIsActive(false)}
             >
               <SectionAnimation
                 menuIsActive={menuIsActive}

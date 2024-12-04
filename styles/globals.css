@@ -467,6 +467,10 @@ div {
   /* main {
     overflow-y: hidden;
   } */
+  main {
+    /* overflow-x: auto; */
+    max-width: 100%;
+  }
   .section-transition-main {
     height: 205vh;
   }
