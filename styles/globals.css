@@ -470,7 +470,7 @@ div {
 
   .section-transition-main {
     height: 205vh;
-    max-width: 100vw;
+    min-width: 100vw;
   }
   .about-content {
     flex-direction: column;
