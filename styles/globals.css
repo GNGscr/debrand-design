@@ -464,9 +464,9 @@ div {
 
 @media (max-width: 680px) {
 
-  main {
+  /* main {
     overflow-y: hidden;
-  }
+  } */
   .section-transition-main {
     height: 205vh;
   }
@@ -496,7 +496,7 @@ div {
   #decleration-first,
   #decleration-second {
     /* font-size: 0.75rem; */
-    display: none;
+    display: flex;
   }
   .header-ul {
     gap: 0;

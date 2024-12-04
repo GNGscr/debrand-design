@@ -168,7 +168,7 @@ const Section2 = ({ scrollYProgress }) => {
     }
     
     useEffect(() => {
-      console.log('menuIsActive: ', menuIsActive);
+      // console.log('menuIsActive: ', menuIsActive);
     //   if (menuIsActive === true) {
         // setTimeout(() => {
           setMenuIsActive(false);

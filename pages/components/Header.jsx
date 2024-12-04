@@ -65,14 +65,16 @@ export default function Header() {
           ref={comp}
           className="header-wrp flex justify-center p-5 fixed z-99 top-0 left-0">
             <div style={{display: 'none'}}>Left</div>
-            <div id="header">
+            <motion.div
+              id="header"
+              initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.1}} style={{opacity: 0}}>
                 <ul className="header-ul flex gap-[100px]">
                   <a href="home" onClick={e => handleClick(e, "home")} id="header-li-1"><li><ZoopEffect>Home</ZoopEffect></li></a>
                   <a href="about" onClick={e => handleClick(e, "about")} id="header-li-2"><li><ZoopEffect>About</ZoopEffect></li></a>
                   <a href="menifest" onClick={e => handleClick(e, "menifest")} id="header-li-3"><li><ZoopEffect>menifest</ZoopEffect></li></a>
                   <a href="projects" onClick={e => handleClick(e, "projects")} id="header-li-3"><li><ZoopEffect>projects</ZoopEffect></li></a>
                 </ul>
-            </div>
+            </motion.div>
             <div style={{display: 'none'}}>Right</div>
         </header>
     )
