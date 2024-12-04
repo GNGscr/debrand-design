@@ -44,9 +44,9 @@ body {
     text-wrap: balance;
   }
 }
-/* main {
+main {
   overflow-x: clip;
-} */
+}
 .header-ul:hover {
   font-size: 1.25rem;
   text-transform: capitalize;
