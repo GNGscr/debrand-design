@@ -28,7 +28,7 @@ export default function Home() {
         <div className="top-screen h-screen left-0 relative">
           <SectionTransition media={media}></SectionTransition>
         </div>
-        <Header />
+        <Header media={media} />
       </div>
   );
 }

@@ -3,7 +3,7 @@ import { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import { easeInOut, motion, useTransform, useScroll } from 'framer-motion';
 
-export default function Header() {
+export default function Header({media}) {
     const comp = useRef(null);
     const [ isIntersecting, setIsIntersecting ] = useState();
 
@@ -69,10 +69,10 @@ export default function Header() {
               id="header"
               initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.1}} style={{opacity: 0}}>
                 <ul className="header-ul flex gap-[100px]">
-                  <a href="home" onClick={e => handleClick(e, "home")} id="header-li-1"><li><ZoopEffect>Home</ZoopEffect></li></a>
-                  <a href="about" onClick={e => handleClick(e, "about")} id="header-li-2"><li><ZoopEffect>About</ZoopEffect></li></a>
-                  <a href="menifest" onClick={e => handleClick(e, "menifest")} id="header-li-3"><li><ZoopEffect>menifest</ZoopEffect></li></a>
-                  <a href="projects" onClick={e => handleClick(e, "projects")} id="header-li-3"><li><ZoopEffect>projects</ZoopEffect></li></a>
+                  <a href="home" onClick={e => handleClick(e, "home")} id="header-li-1"><li><ZoopEffect media={media}>Home</ZoopEffect></li></a>
+                  <a href="about" onClick={e => handleClick(e, "about")} id="header-li-2"><li><ZoopEffect media={media}>About</ZoopEffect></li></a>
+                  {media === 'desktop' ? <a href="menifest" onClick={e => handleClick(e, "menifest")} id="header-li-3"><li><ZoopEffect media={media}>menifest</ZoopEffect></li></a> : null}
+                  <a href="projects" onClick={e => handleClick(e, "projects")} id="header-li-3"><li><ZoopEffect media={media}>projects</ZoopEffect></li></a>
                 </ul>
             </motion.div>
             <div style={{display: 'none'}}>Right</div>
@@ -83,7 +83,7 @@ export default function Header() {
 const DURATION = .10;
 const STAGGER = .10;
 
-const ZoopEffect = ({ children, href }) => {
+const ZoopEffect = ({ children, href, media }) => {
   const container = useRef();
   const { scrollYProgress } = useScroll({
     target: container,
@@ -97,19 +97,22 @@ const ZoopEffect = ({ children, href }) => {
     ["#000", "#000", "#ddd", "#000", "rgb(252 165 165)", "rgb(252 165 165)"],
     { ease: (t) => Math.round(t) }
   );
-  useEffect(() => {
-  }, [color]);
-
-  const boolean = useTransform(
+  const mobileColor = useTransform(
     scrollYProgress,
-    [0, 0.18, 0.2525, 0.665, 0.857, 1],
-    ['false', 'false', 'false', 'true', 'false', 'false'],
+    [0, 0.18, 0.435, 0.865, 1],
+    ["#000", "#000", "#ddd", "rgb(252 165 165)", "rgb(252 165 165)"],
     { ease: (t) => Math.round(t) }
   );
-  // useEffect(() => {
-  //   console.log(scrollYProgress.current);
-  // }, [scrollYProgress]);
-  
+  useEffect(() => {
+  }, [color, mobileColor]);
+
+  // const boolean = useTransform(
+  //   scrollYProgress,
+  //   [0, 0.18, 0.2525, 0.665, 0.857, 1],
+  //   ['false', 'false', 'false', 'true', 'false', 'false'],
+  //   { ease: (t) => Math.round(t) }
+  // );
+    
     return <motion.div 
             initial="initial"
             whileHover="hovered"
@@ -117,7 +120,7 @@ const ZoopEffect = ({ children, href }) => {
             className={`relative overflow-hidden text-gray-800 --font-nerko-one-regular
               whitespace-nowrap text-[1.2rem] font-bold
               sm:text-[1.2rem] md:text-[1.2rem] lg:text-[1.2rem] z-20`}
-            style={{ lineHeight: .8, color }}
+            style={media === 'desktop' ? { lineHeight: .8, color } : { lineHeight: .8, color: mobileColor }}
           >
                 <div>{children.split("").map((l, i) => {
                     return <motion.span
