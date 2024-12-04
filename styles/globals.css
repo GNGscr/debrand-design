@@ -466,8 +466,9 @@ div {
 
 @media (max-width: 680px) {
 
+
   /* main {
-    overflow-y: hidden;
+    overflow-y: clip;
   } */
   .hero-layout, .hero-layout > div {
     height: 100%;
@@ -480,7 +481,7 @@ div {
   }
   .section-transition-main {
     height: 205vh;
-    min-width: 100vw;
+    /* min-width: 100vw; */
   }
   .about-content {
     flex-direction: column;
@@ -500,7 +501,8 @@ div {
     width: 20rem;
   }
   .header-wrp, header, #header {
-    width: 100%;
+    /* width: 100%; */
+    width: 95vw;
   }
   .header-wrp {
     padding: 2.5rem 0rem;
@@ -590,6 +592,9 @@ div {
   .about-me-title {
     /* display: none; */
     font-size: 1rem !important;
+  }
+  .projects-inner-content {
+    flex-direction: column;
   }
   
 }

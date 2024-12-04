@@ -53,7 +53,7 @@ const SectionAnimation = ({ menuIsActive, media }) => {
                     // boxShadow: "0 2px 10px 0 rgba(0, 0, 0, 0.25)",
                     background: "#000" }}>
 
-                        <RiveComponent style={{ width: media === 'mobile' ? '275px' : '400px', height:media === 'mobile' ? '275px' : '400px', borderRadius: "50%", marginTop: "0rem", clipPath: 'circle(40%)'}} src="dolphin.riv"/>
+                        <RiveComponent style={{ width: media === 'mobile' ? '300px' : '400px', height:media === 'mobile' ? '300px' : '400px', borderRadius: "50%", marginTop: "0rem", clipPath: 'circle(40%)'}} src="dolphin.riv"/>
 
             </motion.div>
         </motion.div>
