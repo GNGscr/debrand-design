@@ -54,7 +54,7 @@ export default function Hero({ media }) {
             <div className="hero-layout h-[400px] bg-red w-[100%] flex gap-2.5  pr-10 pl-10 mt-[7.5rem]">
                 <div className="h-[400px] bg-red w-[100%]">
                     <div className="flex justify-center items-center">
-                        <div className="overflow-hidden justify-center items-center w-[100%]">
+                        <div className="overflow-hidden justify-center items-center w-[100%] h-[100%]">
                             <div id="inner-hero-title" className="text-5xl font-bold text-gray-700">
                                 <CreatedBy media={media} />
                             </div>
