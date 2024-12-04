@@ -312,6 +312,7 @@ const Section2 = ({ scrollYProgress, media }) => {
             >
               <SectionAnimation
                 menuIsActive={menuIsActive}
+                media={media}
                 style={{ position: 'relative'}}
               />
             </motion.div>

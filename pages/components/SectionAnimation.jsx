@@ -5,7 +5,7 @@ import { useRive, useStateMachineInput } from 'rive-react';
 
 const STATE_MACHINE_NAME = "State Machine 1";
 
-const SectionAnimation = ({ menuIsActive }) => {
+const SectionAnimation = ({ menuIsActive, media }) => {
 
     const {rive, RiveComponent} = useRive({
         src: "dolphin.riv",
@@ -53,7 +53,7 @@ const SectionAnimation = ({ menuIsActive }) => {
                     // boxShadow: "0 2px 10px 0 rgba(0, 0, 0, 0.25)",
                     background: "#000" }}>
 
-                        <RiveComponent style={{width:'400px', height:'400px', borderRadius: "50%", marginTop: "0rem", clipPath: 'circle(40%)'}} src="dolphin.riv"/>
+                        <RiveComponent style={{ width: media === 'mobile' ? '275px' : '400px', height:media === 'mobile' ? '275px' : '400px', borderRadius: "50%", marginTop: "0rem", clipPath: 'circle(40%)'}} src="dolphin.riv"/>
 
             </motion.div>
         </motion.div>
