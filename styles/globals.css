@@ -467,7 +467,9 @@ div {
   /* main {
     overflow-y: hidden;
   } */
-
+  #pull-line {
+    display: none;
+  }
   .section-transition-main {
     height: 205vh;
     min-width: 100vw;
