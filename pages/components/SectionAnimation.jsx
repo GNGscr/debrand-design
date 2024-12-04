@@ -46,14 +46,19 @@ const SectionAnimation = ({ menuIsActive, media }) => {
                 className={`flex justify-center align-center`}
                 style={{
                     padding: "0",
-                    // height: "35vw",
-                    // width: "35vw",
                     borderRadius: "50%",
-                    // border: "0.5rem solid #ca8a03",
-                    // boxShadow: "0 2px 10px 0 rgba(0, 0, 0, 0.25)",
-                    background: "#000" }}>
-
-                        <RiveComponent style={{ width: '400px', height: '400px', borderRadius: "50%", marginTop: "0rem", clipPath: 'circle(40%)'}} src="dolphin.riv"/>
+                    background: "#000"
+                }}>
+                    <RiveComponent
+                        style={{
+                            width: '400px',
+                            height: '400px',
+                            borderRadius: "50%",
+                            marginTop: "0rem",
+                            clipPath: 'circle(40%)'
+                        }}
+                        src="dolphin.riv"
+                    />
 
             </motion.div>
         </motion.div>
