@@ -466,10 +466,15 @@ div {
 
 @media (max-width: 680px) {
 
-
+  .slide-in {
+    scale: 0.85;
+  }
   /* main {
     overflow-y: clip;
   } */
+   .projects {
+    min-width: 100%;
+   }
   .hero-layout, .hero-layout > div {
     height: 100%;
   }
@@ -501,8 +506,7 @@ div {
     width: 20rem;
   }
   .header-wrp, header, #header {
-    /* width: 100%; */
-    width: 95vw;
+    width: 100%;
   }
   .header-wrp {
     padding: 2.5rem 0rem;
