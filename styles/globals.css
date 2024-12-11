@@ -44,6 +44,9 @@ body {
     text-wrap: balance;
   }
 }
+.main-wrapper {
+  width: 100%;
+}
 main {
   overflow-x: clip;
 }
@@ -476,7 +479,7 @@ div {
     min-width: 100%;
    }
   .hero-layout, .hero-layout > div {
-    height: 100%;
+    height: 100vh;
   }
   #pull-line {
     display: none;

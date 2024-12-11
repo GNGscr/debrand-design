@@ -23,7 +23,7 @@ export default function Home() {
   }, []);
 
   return (
-      <div ref={ref}>
+      <div ref={ref} className="main-wrapper">
         <IntroSlider media={media} />
         <div className="top-screen h-screen left-0 relative">
           <SectionTransition media={media}></SectionTransition>
