@@ -208,7 +208,7 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
             id="menifest"
             ref={SectionScope}
             style={media === 'desktop' ? { scale, rotate } : {}}
-            className={`relative h-screen bg-gray-200 text-[3.5vw]
+            className={`relative h-screen w-screen bg-gray-200 text-[3.5vw]
               flex flex-col items-center justify-center text-black pb-[2.5vh]`}>
               <div
                 className="flex flex-col gap-10 w-[45%]">
