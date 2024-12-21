@@ -157,7 +157,7 @@ export default function Hero({ media }) {
                           onClick={handleClick}
                           style={{ prespective: 1000 }}
                           className={`flex justify-center align-center
-                            w-fit fixed bottom-12 text-black font-bold text-3xl`}
+                            w-fit fixed bottom-24 text-black font-bold text-3xl`}
                         >   
                             <motion.div 
                               { ...hoverStatesAnimations }

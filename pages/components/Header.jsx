@@ -21,13 +21,10 @@ export default function Header({media}) {
     useEffect(() => {
       const sectionToIntersect = ["#home", "#about", "#menifest"];
       const intersections = document.querySelectorAll(sectionToIntersect);
-      // console.log(intersections);
       const intersectionsIterator = (entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             const intersectingEntry = entry.target.id.replace('#', '');
-            // console.log(intersectingEntry);
-            
             // setIsIntersecting( === intersectingEntry); // Save the intersecting button
             // setCurrentButton(intersectingEntry); // Save the intersecting button
           }
@@ -44,27 +41,15 @@ export default function Header({media}) {
       e.preventDefault()
       
       const target = document.getElementById(inputTarget);
-      console.log(target.id);
-      // console.log(window.scrollY);
       const scrollPositions = {
         "home": 0,
-        "about": 303,
-        "menifest": 703,
-        "projects": 1496.5,
+        "about": 703,
+        "menifest": 1496.5,
+        "projects": 2500,
       };
-      // debugger;
-      // console.log([...Object.keys(scrollPositions)].includes(target.id));
       if (target && [...Object.keys(scrollPositions)].includes(target.id)) {
         window.scrollTo({
           top: scrollPositions[target.id],
-          behavior: 'smooth'
-        });
-      }
-      if (target) {
-        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
-        // console.log('targetPos: ', targetPosition);
-        window.scrollTo({
-          top: targetPosition,
           behavior: 'smooth'
         });
       }
