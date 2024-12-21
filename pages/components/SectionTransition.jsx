@@ -324,13 +324,11 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
               transition={{ duration: 2.25, delay: 0.3 }}
               onAnimationComplete={() => setMenuIsActive(false)}
             >
-              <div style={{ }}>
-                <SectionAnimation
-                  menuIsActive={menuIsActive}
-                  media={media}
-                  style={{ position: 'relative'}}
-                />
-              </div>
+              <SectionAnimation
+                menuIsActive={menuIsActive}
+                media={media}
+                style={{ position: 'relative'}}
+              />
             </motion.div>
             
             <motion.div
