@@ -44,15 +44,25 @@ export default function Header({media}) {
       e.preventDefault()
       
       const target = document.getElementById(inputTarget);
-      console.log(target);
-      if (target === 'home') {
+      console.log(target.id);
+      // console.log(window.scrollY);
+      const scrollPositions = {
+        "home": 0,
+        "about": 303,
+        "menifest": 703,
+        "projects": 1496.5,
+      };
+      // debugger;
+      // console.log([...Object.keys(scrollPositions)].includes(target.id));
+      if (target && [...Object.keys(scrollPositions)].includes(target.id)) {
         window.scrollTo({
-          top: 0,
+          top: scrollPositions[target.id],
           behavior: 'smooth'
         });
       }
       if (target) {
         const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+        // console.log('targetPos: ', targetPosition);
         window.scrollTo({
           top: targetPosition,
           behavior: 'smooth'

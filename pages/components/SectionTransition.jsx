@@ -16,10 +16,10 @@ export default function SectionTransition({ media }) {
         offset: ['start start', 'end end']
     });
 
-    // let { scrollYProgress: scrollYProgressNew } = useScroll({
-    //   target: container,
-    //   offset: ['start start', 'end start']
-    // });
+    let { scrollYProgress: scrollYProgressEndStart } = useScroll({
+      target: container,
+      offset: ['start start', 'end start']
+    });
     
     useEffect(() => {
         const lenis = new Lenis();
@@ -36,6 +36,7 @@ export default function SectionTransition({ media }) {
         <Section1 scrollYProgress={scrollYProgress} media={media} />
         <Section2
           scrollYProgress={scrollYProgress}
+          scrollYProgressEndStart={scrollYProgressEndStart}
           media={media}
           // scrollYProgressNew={scrollYProgressNew}
            />
@@ -82,7 +83,7 @@ const Section1 = ({scrollYProgress, media}) => {
     )
 }
 
-const Section2 = ({ scrollYProgress, media }) => {
+const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
 
   const [ isStartAnimation, setIsStartAnimation] = useState(false);
   const [menuIsActive, setMenuIsActive] = useState(true);
@@ -167,6 +168,14 @@ const Section2 = ({ scrollYProgress, media }) => {
       // }
       // }, []);
     }
+
+      // Set the display value to switch by toggle (ease fnc) between flex and none
+      const isDisplayed = useTransform(
+        scrollYProgressEndStart,
+        [0, 0.15, 0.25, 0.75, 1],
+        ["hidden", "hidden", "hidden", "visible", "visible"],
+        { ease: (t) => Math.round(t) }
+    );
     
     useEffect(() => {
       // console.log('menuIsActive: ', menuIsActive);
@@ -185,7 +194,12 @@ const Section2 = ({ scrollYProgress, media }) => {
   // //       // clearTimeout(timeout);
   // //     // setActivateRive(true); 
   //   }, 2000);
-  }, [menuIsActive]);
+  console.log('is displayed: ', isDisplayed.current)
+  console.log('menu-is-active: ', menuIsActive);
+  
+  }, [menuIsActive, isDisplayed]);
+
+
 
     return (
       <div className="sticky top-0 h-[237.5vh]" style={{ height: media === 'desktop' ? '237.5vh' : '100vh' }}>
@@ -304,17 +318,19 @@ const Section2 = ({ scrollYProgress, media }) => {
           <motion.div className="projects-content relative">
             <div className="projects-title uppercase">Projects</div>
             <motion.div
-              style={{ opacity: 0 }}
+              style={{ opacity: 0, visibility: isDisplayed  }}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 2.25, delay: 0.3 }}
               onAnimationComplete={() => setMenuIsActive(false)}
             >
-              <SectionAnimation
-                menuIsActive={menuIsActive}
-                media={media}
-                style={{ position: 'relative'}}
-              />
+              <div style={{ }}>
+                <SectionAnimation
+                  menuIsActive={menuIsActive}
+                  media={media}
+                  style={{ position: 'relative'}}
+                />
+              </div>
             </motion.div>
             
             <motion.div
