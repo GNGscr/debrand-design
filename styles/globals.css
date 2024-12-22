@@ -545,6 +545,7 @@ div {
   }
   .header-wrp {
     padding: 2.5rem 0rem;
+    scale: 0.85;
   }
   #decleration-first,
   #decleration-second {
@@ -623,7 +624,8 @@ div {
     top: 85vh;
   }
   .wave-btn {
-    margin-top: -3rem;
+    /* margin-top: -3rem; */
+    margin-top: 3rem;
   }
   .wave-btn > span {
     font-size: 1.75rem;
