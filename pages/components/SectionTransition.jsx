@@ -49,7 +49,7 @@ const Section1 = ({scrollYProgress, media}) => {
     const rotate = useTransform(scrollYProgress, [0, 1], [0, -5]);
     return (
         <motion.div
-          style={media === 'desktop' ? { scale, rotate } : {}}
+          style={media === 'desktop' ? { scale, rotate } : { scale, rotate }}
           id="about"
           className={`sticky top-0 h-screen bg-black text-[3.25vw] flex flex-col
             items-center justify-center text-white pt-[10vh] pb-[0vh] mb-[5vh]`}>
@@ -203,11 +203,11 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
 
     return (
       <div className="sticky top-0 h-[237.5vh]" style={{ height: media === 'desktop' ? '237.5vh' : '100vh' }}>
-        <div className="sticky top-0 h-[135vh]" style={{ display: media === 'desktop' ? 'flex' : 'none' }}>
+        <div className="sticky top-0 h-[135vh]" style={{ height: media === 'desktop' ? '100vh' : '100vh' }}>
           <motion.div
             id="menifest"
             ref={SectionScope}
-            style={media === 'desktop' ? { scale, rotate } : {}}
+            style={media === 'desktop' ? { scale, rotate } : { scale, rotate }}
             className={`relative h-screen w-screen bg-gray-200 text-[3.5vw]
               flex flex-col items-center justify-center text-black pb-[2.5vh]`}>
               <div
