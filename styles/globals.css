@@ -486,9 +486,9 @@ div {
   .slide-in {
     scale: 0.85;
   }
-  main {
+  /* main {
     overflow-y: clip;
-  }
+  } */
    #creative-top,
    #creative-bottom {
     font-size: 1.4rem;
