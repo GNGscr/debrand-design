@@ -202,8 +202,8 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
 
 
     return (
-      <div className="sticky top-0 h-[237.5vh]" style={{ height: media === 'desktop' ? '237.5vh' : '100vh' }}>
-        <div className="sticky top-0 h-[135vh]" style={{ height: media === 'desktop' ? '100vh' : '100vh' }}>
+      <div className="sticky top-0 h-[237.5vh]" style={{ height: media === 'desktop' ? '237.5vh' : '100vh', width: '100%' }}>
+        <div className="sticky top-0 h-[135vh]" style={{ height: media === 'desktop' ? '100vh' : '100vh', width: '100%' }}>
           <motion.div
             id="menifest"
             ref={SectionScope}
