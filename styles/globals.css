@@ -510,7 +510,7 @@ div {
     min-width: 100%;
    }
   .hero-layout, .hero-layout > div {
-    min-height: 105vh;
+    min-height: 102.5vh;
   }
   #pull-line {
     display: flex;
