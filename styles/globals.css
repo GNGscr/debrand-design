@@ -469,6 +469,10 @@ div {
 
 @media (max-width: 680px) {
 
+  a > li > div {
+    font-size: 1.1rem !important;
+  }
+
   .slide-in {
     scale: 0.85;
   }
@@ -615,7 +619,8 @@ div {
   a[href="#about"] {
     position: absolute;
     width: 100%;
-    bottom: 17.5vh;
+    /* bottom: 17.5vh; */
+    top: 85vh;
   }
   .wave-btn {
     margin-top: -3rem;

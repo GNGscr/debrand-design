@@ -41,15 +41,23 @@ export default function Header({media}) {
       e.preventDefault()
       
       const target = document.getElementById(inputTarget);
-      const scrollPositions = {
-        "home": 0,
-        "about": 703,
-        "menifest": 1496.5,
-        "projects": 2500,
+      const scrollPositions = { 
+        "desktop": {
+          "home": 0,
+          "about": 703,
+          "menifest": 1496.5,
+          "projects": 2500,
+        },
+        "mobile": {
+          "home": 0,
+          "about": 703,
+          "menifest": 1496.5,
+          "projects": 2500,
+        },
       };
-      if (target && [...Object.keys(scrollPositions)].includes(target.id)) {
+      if (target && [...Object.keys(scrollPositions[media])].includes(target.id)) {
         window.scrollTo({
-          top: scrollPositions[target.id],
+          top: scrollPositions[media][target.id],
           behavior: 'smooth'
         });
       }
@@ -66,7 +74,7 @@ export default function Header({media}) {
                 <ul className="header-ul flex gap-[100px]">
                   <a href="home" onClick={e => handleClick(e, "home")} id="header-li-1"><li><ZoopEffect media={media}>Home</ZoopEffect></li></a>
                   <a href="about" onClick={e => handleClick(e, "about")} id="header-li-2"><li><ZoopEffect media={media}>About</ZoopEffect></li></a>
-                  {media === 'desktop' ? <a href="menifest" onClick={e => handleClick(e, "menifest")} id="header-li-3"><li><ZoopEffect media={media}>menifest</ZoopEffect></li></a> : null}
+                  <a href="menifest" onClick={e => handleClick(e, "menifest")} id="header-li-3"><li><ZoopEffect media={media}>menifest</ZoopEffect></li></a>
                   <a href="projects" onClick={e => handleClick(e, "projects")} id="header-li-3"><li><ZoopEffect media={media}>projects</ZoopEffect></li></a>
                 </ul>
             </motion.div>
