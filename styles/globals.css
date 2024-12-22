@@ -516,9 +516,9 @@ div {
    .about-me-title {
     margin-bottom: 2.5rem;
    }
-   /* .projects {
-    min-width: 100%;
-   } */
+   .projects {
+    max-width: 100%;
+   }
   .hero-layout, .hero-layout > div {
     min-height: 10.5vh;
   }
