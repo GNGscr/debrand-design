@@ -678,5 +678,6 @@ div {
   } */
   .proj-card {
     height: 50% !important;
+    width: 90%;
   }
 }
