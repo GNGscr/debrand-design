@@ -525,9 +525,6 @@ div {
   .slide-in > div > div {
     width: 80vw;
   }
-  canvas {
-    width: 250px !important;
-  }
   #pull-line {
     display: flex;
   }
@@ -678,6 +675,5 @@ div {
   } */
   .proj-card {
     height: 50% !important;
-    width: 90%;
   }
 }
