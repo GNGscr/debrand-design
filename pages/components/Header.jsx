@@ -102,7 +102,7 @@ const ZoopEffect = ({ children, href, media }) => {
   );
   const mobileColor = useTransform(
     scrollYProgress,
-    [0, 0.2, 0.2525, 0.725, 0.795, 1],
+    [0, 0.2, 0.2525, 0.725, 0.735, 1],
     ["#000", "#000", "#fff", "#000", "rgb(252 165 165)", "rgb(252 165 165)"],
     { ease: (t) => Math.round(t) }
   );

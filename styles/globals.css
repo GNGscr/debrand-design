@@ -655,6 +655,10 @@ div {
   .projects {
 
   }
+
+.projects-content {
+  width: 50%;
+}
   .projects-inner-content {
     flex-direction: column;
     top: 0.5rem !important;
