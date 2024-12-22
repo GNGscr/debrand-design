@@ -51,8 +51,8 @@ const SectionAnimation = ({ menuIsActive, media }) => {
                 }}>
                     <RiveComponent
                         style={{
-                            width: '400px',
-                            height: '400px',
+                            width: media === 'mobile' ? '300px' : '400px',
+                            height: media === 'mobile' ? '300px' : '400px',
                             borderRadius: "50%",
                             marginTop: "0rem",
                             clipPath: 'circle(40%)'
