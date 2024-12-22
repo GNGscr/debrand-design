@@ -526,13 +526,16 @@ div {
   .about-content {
     flex-direction: column;
     align-items: center;
-    gap: 13rem;
+    /* gap: 13rem; */
+    gap: 4.5rem;
   }
   .about-content > div:nth-child(1) {
     /* scale: 2.5;
     top: 7.5rem; */
-    scale: 2;
-    top: 5.5rem;
+    /* scale: 2;
+    top: 5.5rem; */
+    scale: 1.5;
+    top: 1.5rem;
   }
   .right-section {
     padding: 0 3rem;
@@ -621,7 +624,7 @@ div {
     position: absolute;
     width: 100%;
     /* bottom: 17.5vh; */
-    top: 85vh;
+    top: 90vh;
   }
   .wave-btn {
     /* margin-top: -3rem; */
