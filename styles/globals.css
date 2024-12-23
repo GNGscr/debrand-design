@@ -516,9 +516,6 @@ div {
    .about-me-title {
     margin-bottom: 2.5rem;
    }
-   /* .projects {
-    max-width: 100%;
-   } */
   .hero-layout, .hero-layout > div {
     min-height: 10.5vh;
   }
@@ -527,9 +524,19 @@ div {
   }
   #pull-line {
     display: flex;
+    width: 3rem;
   }
   .decleration {
     font-size: 0.85rem;
+
+  }
+  #menifest > div {
+    gap: 5rem;
+  }
+  #decleration-first,
+  #decleration-second {
+    font-weight: 400 !important;
+    font-size: 1.75rem;
   }
   .section-transition-main {
     height: 205vh;
