@@ -93,7 +93,7 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
     "line1": "My Passion is creating a Unique",
     "line2": "& Meaninigful experience.",
   };
-  const secondPara = "Making each Project with different Energy and Authentic Vibe !";
+  const secondPara = "Making each Project with different Energy and an Authentic Vibe !";
 
   const projects = [
     {

@@ -544,7 +544,7 @@ div {
   }
   .section-transition-main {
     height: 205vh;
-    width: 100%;
+    width: 100vw;
     padding: 0;
     margin: 0;
     /* max-width: 100vw; */
