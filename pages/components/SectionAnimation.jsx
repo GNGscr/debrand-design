@@ -53,8 +53,8 @@ const SectionAnimation = ({ menuIsActive, media }) => {
                         style={{
                             width: media === 'mobile' ? '300px' : '400px',
                             height: media === 'mobile' ? '300px' : '400px',
-                            marginTop: media === 'mobile' ? "3rem" : "0rem",
                             borderRadius: "50%",
+                            marginTop: "0rem",
                             clipPath: 'circle(40%)'
                         }}
                         src="dolphin.riv"

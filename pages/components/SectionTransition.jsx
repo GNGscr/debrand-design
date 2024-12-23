@@ -98,7 +98,7 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
   const projects = [
     {
       "title": "Thai Islands",
-      "link": "https://thaiislands.com",
+      "link": "https://thaiislands.vercel.app/about",
       "image": thaiIslandsImg.src,
       "content": {}
     },
@@ -142,9 +142,11 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
     await animate("#pull-line", { opacity: 0 }, { duration: 0.1, delay: 0.1 });
   }
 
-  const goToLink = e => {
+  const goToLink = (e, link) => {
+    console.log(link);
     e.preventDefault();
-    alert('suppose to go to size')
+    
+    // alert('suppose to go to size')
   }
   // let oneRound = 1;
   // let interval = {};
@@ -340,11 +342,11 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
               {
                 projects.map(({link, image, title}, index) => {
                   return (
-                    <a key={index} className="proj-a" href={link} onClick={e => goToLink(e)}>
+                    <a key={index} className="proj-a" href={link}>
                       <div className="proj-card"
                         style={{
                           backgroundPosition: 'center',
-                          borderRadius: '1.85rem',
+                          borderRadius: '0.85rem',
                           backgroundImage: `url(${image})`,
                           // backgroundSize: "cover",
                           backgroundSize: "contain",
