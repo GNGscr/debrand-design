@@ -342,7 +342,7 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
               {
                 projects.map(({link, image, title}, index) => {
                   return (
-                    <a key={index} className="proj-a" href={link}>
+                    <a key={index} className="proj-a" href={link} target="_blank" rel="noopener noreferrer">
                       <div className="proj-card"
                         style={{
                           backgroundPosition: 'center',

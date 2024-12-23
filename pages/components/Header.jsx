@@ -50,9 +50,9 @@ export default function Header({media}) {
         },
         "mobile": {
           "home": 0,
-          "about": 703,
-          "menifest": 1496.5,
-          "projects": 2500,
+          "about": 900,
+          "menifest": 1730,
+          "projects": 2600,
         },
       };
       if (target && [...Object.keys(scrollPositions[media])].includes(target.id)) {
