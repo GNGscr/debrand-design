@@ -513,8 +513,11 @@ div {
     position: absolute;
     left: -0.65rem;
    }
+   #about {
+    padding-top: 2.5rem;
+   }
    .about-me-title {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.25rem;
    }
   .hero-layout, .hero-layout > div {
     min-height: 10.5vh;
