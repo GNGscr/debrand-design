@@ -678,8 +678,10 @@ div {
     top: 0.5rem !important;
   }
   a.proj-a {
-    width: 80vw;
+    /* width: 80vw; */
     /* height: 50%; */
+    width: 100%;
+    height: 100%;
   }
   /* .slide-in {
     height: 35vh !important;
