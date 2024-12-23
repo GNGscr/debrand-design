@@ -45,8 +45,8 @@ export default function Header({media}) {
         "desktop": {
           "home": 0,
           "about": 703,
-          "menifest": 1496.5,
-          "projects": 2500,
+          "menifest": 1450,
+          "projects": 2150,
         },
         "mobile": {
           "home": 0,
