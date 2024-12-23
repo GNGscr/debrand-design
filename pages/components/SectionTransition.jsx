@@ -97,13 +97,13 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
 
   const projects = [
     {
-      "title": "Thaiislands",
+      "title": "Thai Islands",
       "link": "https://thaiislands.com",
       "image": thaiIslandsImg.src,
       "content": {}
     },
     {
-      "title": "CreamFromIce",
+      "title": "Cream From Ice",
       "link": "https://cream-of-ice.com",
       "image": thaiIslandsImg.src,
       "content": {}
