@@ -542,6 +542,7 @@ div {
   }
   #menifest > div {
     gap: 5rem;
+    padding-top: 3.25rem;
   }
   #decleration-first,
   #decleration-second {
