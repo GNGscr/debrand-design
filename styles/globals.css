@@ -533,8 +533,8 @@ div {
   }
   #pull-line {
     display: flex;
-    width: 4rem;
-    top: 10rem;
+    width: 4.25rem;
+    top: 12rem;
   }
   .decleration {
     font-size: 0.85rem;
