@@ -2,6 +2,7 @@
 import Image from "next/image";
 import myImg from "../public/images/my-photo.jpeg";
 import thaiIslandsImg from "../public/images/thaiislands-img.png";
+import iceOfCreamImg from "../public/images/ice-of-cream.png";
 import { useEffect, useRef, useState } from "react";
 import { useTransform, useScroll, motion, useAnimate, useMotionValue } from 'framer-motion';
 import Lenis from "@studio-freight/lenis";
@@ -103,9 +104,9 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
       "content": {}
     },
     {
-      "title": "Cream From Ice",
-      "link": "https://cream-of-ice.com",
-      "image": thaiIslandsImg.src,
+      "title": "Ice Of Cream",
+      "link": "https://ice-of-cream.vercel.app/",
+      "image": iceOfCreamImg.src,
       "content": {}
     }
   ];
