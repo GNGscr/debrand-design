@@ -2,7 +2,7 @@
 import Image from "next/image";
 import myImg from "../public/images/my-photo.jpeg";
 import thaiIslandsImg from "../public/images/thaiislands-img.png";
-import iceOfCreamImg from "../public/images/ice-of-cream.png";
+import iceOfCreamImg from "../public/images/ice-of-cream-img-1.png";
 import { useEffect, useRef, useState } from "react";
 import { useTransform, useScroll, motion, useAnimate, useMotionValue } from 'framer-motion';
 import Lenis from "@studio-freight/lenis";
