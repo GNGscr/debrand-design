@@ -98,7 +98,7 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
 
   const projects = [
     {
-      "title": "Thai Islands",
+      "title": "Thaiislands",
       "link": "https://thaiislands.vercel.app/about",
       "image": thaiIslandsImg.src,
       "content": {}
@@ -353,7 +353,13 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
                           backgroundSize: "contain",
                           backgroundRepeat: 'no-repeat',
                       }}>
-                        <div className="proj-title">{title}</div>
+                        <motion.div
+                          className="proj-title"
+                          initial={{ opacity: 0 }}
+                          whileInView={{ opacity: 0.7 }}
+                          transition={{ duration: 1.15, delay: 3.85 }}
+                        >{title}
+                        </motion.div>
                       </div>
                     </a>
                   )
