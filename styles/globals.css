@@ -700,4 +700,7 @@ div {
   .projects-title {
     margin-top: -8.5rem !important;
   }
+  #pull-line {
+    top: 12rem;
+  }
 }
