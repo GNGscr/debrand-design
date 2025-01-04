@@ -608,6 +608,7 @@ div {
   }
   .header-ul {
     gap: 1.75rem;
+    font-size: 1rem !important;
     width: 100%;
     z-index: 10;
     align-items: center;
@@ -656,6 +657,10 @@ div {
     display: flex;
     justify-content: center;
   }
+  /* menu links */
+  .header-ul > a > li > div > div {
+    font-size: 1rem;
+  }  
   .created-by {
     scale: 0.4;
     margin-top: 2.5rem;
