@@ -489,6 +489,10 @@ div {
 
 @media (max-width: 680px) {
 
+  #home {
+    height: 102vh;
+  }
+
   a > li > div {
     font-size: 1.1rem !important;
   }
@@ -641,11 +645,11 @@ div {
     justify-content: center;
   }
   .created-by {
-    scale: 0.35;
+    scale: 0.4;
     margin-top: 3rem;
   }
   .social-label {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     left: -1rem;
   }
   #intro-slider {
