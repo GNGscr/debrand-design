@@ -688,7 +688,8 @@ div {
     height: 100vh;
   }
   .proj-title {
-      font-size: 1.75rem;
+      /* font-size: 1.75rem; */
+      font-size: 3.15rem;
   }
   .projects-content {
     width: 80%;
@@ -697,7 +698,7 @@ div {
   }
   .projects-inner-content {
     flex-direction: column;
-    top: 27.5vh !important;
+    top: 25vh !important;
     height: 60%;
   }
   a.proj-a {
