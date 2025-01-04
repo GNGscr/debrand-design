@@ -666,6 +666,11 @@ div {
   .wave-btn > span {
     font-size: 1.75rem;
   }
+  #about,
+#menifest {
+    display: none;
+  }
+  
 
   .about-me-title {
     /* display: none; */

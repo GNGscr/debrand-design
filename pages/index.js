@@ -12,7 +12,7 @@ export default function Home() {
   useEffect(() => {
     const { width } = ref.current.getBoundingClientRect();    
     setMedia(width < 680 ? "mobile" : "desktop") 
-  }, []);
+  }, [ref]);
 
   return (
       <div ref={ref} className="main-wrapper">

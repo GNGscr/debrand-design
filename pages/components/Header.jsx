@@ -73,8 +73,8 @@ export default function Header({media}) {
               initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.1}} style={{opacity: 0}}>
                 <ul className="header-ul flex gap-[100px]">
                   <a href="home" onClick={e => handleClick(e, "home")} id="header-li-1"><li><ZoopEffect media={media}>Home</ZoopEffect></li></a>
-                  <a href="about" onClick={e => handleClick(e, "about")} id="header-li-2"><li><ZoopEffect media={media}>About</ZoopEffect></li></a>
-                  <a href="menifest" onClick={e => handleClick(e, "menifest")} id="header-li-3"><li><ZoopEffect media={media}>menifest</ZoopEffect></li></a>
+                  {media === "desktop" ? <a href="about" onClick={e => handleClick(e, "about")} id="header-li-2"><li><ZoopEffect media={media}>About</ZoopEffect></li></a> : ""}
+                  {media === "desktop" ? <a href="menifest" onClick={e => handleClick(e, "menifest")} id="header-li-3"><li><ZoopEffect media={media}>menifest</ZoopEffect></li></a> : ""}
                   <a href="projects" onClick={e => handleClick(e, "projects")} id="header-li-3"><li><ZoopEffect media={media}>projects</ZoopEffect></li></a>
                 </ul>
             </motion.div>
