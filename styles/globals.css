@@ -490,7 +490,7 @@ div {
 @media (max-width: 680px) {
 
   #home {
-    height: 102vh;
+    height: 100svh;
   }
 
   a > li > div {
