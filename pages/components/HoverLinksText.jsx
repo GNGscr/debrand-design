@@ -204,7 +204,7 @@ const Link = ({ heading, subheading, href, cta, media, index }) => {
           left,
           translateX: "15%",
           translateY: media === "mobile" ? "-165%" : "-85%",
-          display: media === "mobile" ? "none" : "flex"
+          display: media === "mobile" ? "flex" : "flex"
         }}
         variants={{
           initial: { scale: 0, rotate: "12.5deg" },
