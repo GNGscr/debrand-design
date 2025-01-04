@@ -39,9 +39,9 @@ body {
   margin: 0;
   /* box-sizing: content-box; */
 }
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 /* Disable blue highlight on button click */
 button {
   -webkit-tap-highlight-color: transparent;
@@ -224,7 +224,7 @@ button:focus {
 
 .section-transition-main {
   background-color: rgb(45, 45, 45);
-  height: 205vh;
+  height: 205svh;
 }
 .content h1 {
   text-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
@@ -277,8 +277,8 @@ button:focus {
   flex-direction: column;
   background-color: #000;
   padding: 5rem 13.5rem;
-  height: 102.5vh;
-  height: 137vh;
+  height: 102.5svh;
+  height: 137svh;
   width: 100%;
   border-top: 0 2px 10px 0 rgba(0, 0, 0, 0.45);
 }
@@ -530,7 +530,7 @@ div {
     margin-bottom: 1.25rem;
    }
   .hero-layout, .hero-layout > div {
-    min-height: 10.5vh;
+    min-height: 10.5svh;
   }
   .slide-in > div > div {
     width: 80vw;
@@ -554,7 +554,7 @@ div {
     font-size: 1.75rem;
   }
   .section-transition-main {
-    height: 205vh;
+    height: 205svh;
     width: 100vw;
     padding: 0;
     margin: 0;
@@ -661,7 +661,7 @@ div {
   a[href="#about"] {
     position: absolute;
     width: 100%;
-    top: 85vh;
+    top: 85svh;
   }
   .wave-btn {
     margin-top: 3rem;
@@ -681,7 +681,7 @@ div {
   }
   .projects {
     padding: 0;
-    height: 102.5vh;
+    height: 102.5svh;
   }
   .proj-title {
       font-size: 1.75rem;
@@ -692,9 +692,9 @@ div {
   }
   .projects-inner-content {
     flex-direction: column;
-    top: 20vh !important;
+    top: 20svh !important;
     /* gap: 5rem; */
-    /* height: 80vh; */
+    /* height: 80svh; */
     height: 60%;
   }
   a.proj-a {
