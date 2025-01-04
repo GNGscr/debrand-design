@@ -615,7 +615,7 @@ div {
   }
   .social-links {
     flex-direction: column;
-    gap: 0;
+    row-gap: 0.75rem;
   }
   .debrand-logo {
     margin-left: 0;
