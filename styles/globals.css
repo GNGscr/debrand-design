@@ -489,10 +489,6 @@ div {
 
 @media (max-width: 680px) {
 
-  #home {
-    height: 100svh;
-  }
-
   a > li > div {
     font-size: 1.1rem !important;
   }
@@ -621,7 +617,7 @@ div {
     margin-left: 0;
   }
   .hero-layout {
-    margin-top: 3rem;
+    margin-top: 5rem;
     width: 100%;
   }
   .main-logo-wrp {

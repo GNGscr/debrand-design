@@ -59,8 +59,8 @@ export default function Home() {
             ? <div className="top-screen h-screen left-0 relative">
             <SectionTransition media={media}></SectionTransition>
           </div>
-            :         <div
-            id="projects"
+            : <div
+            // id="projects"
             className="projects">
             <motion.div className="projects-content relative">
               <div className="projects-title uppercase">Projects</div>
