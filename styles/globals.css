@@ -686,6 +686,7 @@ div {
   .projects {
     padding: 0;
     height: 102.5vh;
+    height: 100vh;
   }
   .proj-title {
       font-size: 1.75rem;
