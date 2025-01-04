@@ -634,6 +634,9 @@ div {
     justify-content: center;
     width: 112.5%;
   }
+  .link-cta {
+    font-weight: 400;
+  }
   .link-text {
     font-size: 1.75rem;
   }
