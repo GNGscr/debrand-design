@@ -62,7 +62,7 @@ export default function Hero({ media }) {
                               initial={{ opacity: 0, scale: 1 }}
                               animate={{ opacity: 0.035, scale: 1 }}
                               transition={{ duration: 3, delay: 2.5 }}
-                              className={`main-logo-wrp h-[87.5vh] mt-[-42.5vh]
+                              className={`main-logo-wrp h-[87.5%] mt-[-42.5%]
                                 ${media === 'mobile' ? 'ml-[-2.5rem]' : ''}
                                 w-[95%] flex justify-center fixed z-1`}
                               style={{ paddingTop: "10vh", zIndex: "-1 !important", }}>

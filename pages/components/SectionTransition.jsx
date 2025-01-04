@@ -53,7 +53,7 @@ const Section1 = ({scrollYProgress, media}) => {
           style={media === 'desktop' ? { scale, rotate } : { scale, rotate }}
           id="about"
           className={`sticky top-0 h-screen bg-black text-[3.25vw] flex flex-col
-            items-center justify-center text-white pt-[10vh] pb-[0vh] mb-[5vh]`}>
+            items-center justify-center text-white pt-[10%] pb-[0%] mb-[5%]`}>
             <ShineWaveAnimation text="About Me" />
             <div className="about-content flex gap-[10rem] mt-[1rem]">
                 <div style={{clipPath: "xywh(0 5px 100% 75% round 15% 0)" }}
@@ -206,14 +206,14 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
   
 
     return (
-      <div className="sticky top-0 h-[237.5vh]" style={{ height: media === 'desktop' ? '237.5vh' : '100vh', width: '100%' }}>
-        <div className="sticky top-0 h-[135vh]" style={{ height: media === 'desktop' ? '100vh' : '0vh', width: '100%' }}>
+      <div className="sticky top-0 h-[237.5%]" style={{ height: media === 'desktop' ? '237.5vh' : '100vh', width: '100%' }}>
+        <div className="sticky top-0 h-[135%]" style={{ height: media === 'desktop' ? '100vh' : '0vh', width: '100%' }}>
           <motion.div
             id="menifest"
             ref={SectionScope}
             style={media === 'desktop' ? { scale, rotate } : { scale, rotate }}
             className={`relative h-screen w-screen bg-gray-200 text-[3.5vw]
-              flex flex-col items-center justify-center text-black pb-[2.5vh]`}>
+              flex flex-col items-center justify-center text-black pb-[2.5%]`}>
               <div
                 className="flex flex-col gap-10 w-[45%]">
                   <motion.div
