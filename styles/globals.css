@@ -641,11 +641,11 @@ div {
     justify-content: center;
   }
   .created-by {
-    scale: 0.45;
+    scale: 0.35;
     margin-top: 3rem;
   }
   .social-label {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     left: -1rem;
   }
   #intro-slider {
