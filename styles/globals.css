@@ -658,8 +658,9 @@ div {
     justify-content: center;
   }
   /* menu links */
+  #header-li-1 > li > div > div:nth-child(1)
   .header-ul > a > li > div > div {
-    font-size: 1rem;
+    font-size: 1.075rem;
   }  
   .created-by {
     scale: 0.4;

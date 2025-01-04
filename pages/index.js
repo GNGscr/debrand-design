@@ -100,7 +100,7 @@ export default function Home() {
                           <motion.div
                             className="proj-title"
                             initial={{ opacity: 0 }}
-                            whileInView={{ opacity: 0.7 }}
+                            animate={inView ? { opacity: 0.7 } : { opacity: 0 }}
                             // transition={{ duration: 1.15, delay: 3.85 }}
                             transition={{ duration: 1.15, delay: 4.15 }}
                           >{title}
