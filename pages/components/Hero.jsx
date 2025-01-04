@@ -62,7 +62,7 @@ export default function Hero({ media }) {
                               initial={{ opacity: 0, scale: 1 }}
                               animate={{ opacity: 0.035, scale: 1 }}
                               transition={{ duration: 3, delay: 2.5 }}
-                              className={`main-logo-wrp h-[87.5%] mt-[-42.5%]
+                              className={`main-logo-wrp h-[87.5vh] mt-[-42.5vh]
                                 ${media === 'mobile' ? 'ml-[-2.5rem]' : ''}
                                 w-[95%] flex justify-center fixed z-1`}
                               style={{ paddingTop: "10vh", zIndex: "-1 !important", }}>
@@ -162,12 +162,12 @@ export default function Hero({ media }) {
                             {
                                 media === "desktop"
                                 ? <motion.div 
-                                    { ...hoverStatesAnimations }
-                                    style={{ borderRadius: "50%" }}
-                                    className="absolute p-2 border-2 border-[#000]"
-                                    >
-                                    <svg style={{rotate: "90deg"}} width="24" height="24" stroke="#000" strokeWidth="1px"  xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
-                                </motion.div>
+                                { ...hoverStatesAnimations }
+                                style={{ borderRadius: "50%" }}
+                                className="absolute p-2 border-2 border-[#000]"
+                                >
+                                  <svg style={{rotate: "90deg"}} width="24" height="24" stroke="#000" strokeWidth="1px"  xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+                              </motion.div>
                                 : ""
                             } 
                         </a>
