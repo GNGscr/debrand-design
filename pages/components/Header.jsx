@@ -50,9 +50,9 @@ export default function Header({media}) {
         },
         "mobile": {
           "home": 0,
-          "about": 900,
-          "menifest": 1730,
-          "projects": 2600,
+          // "about": 900,
+          // "menifest": 1730,
+          "projects": 500,
         },
       };
       if (target && [...Object.keys(scrollPositions[media])].includes(target.id)) {
@@ -102,8 +102,8 @@ const ZoopEffect = ({ children, href, media }) => {
   );
   const mobileColor = useTransform(
     scrollYProgress,
-    [0, 0.2, 0.2525, 0.725, 0.735, 1],
-    ["#000", "#000", "#fff", "#000", "rgb(252 165 165)", "rgb(252 165 165)"],
+    [0, 0.2525, 0.735, 1],
+    ["#000", "#000", "rgb(252 165 165)", "rgb(252 165 165)"],
     { ease: (t) => Math.round(t) }
   );
   useEffect(() => {
