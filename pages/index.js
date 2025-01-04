@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import IntroSlider from "./components/IntroSlider";
 import SectionTransition from './components/SectionTransition';
 import Header from "./components/Header";
-import { motion } from "framer-motion";
+import { useTransform, useScroll, motion, useAnimate, useMotionValue } from 'framer-motion';
 import SectionAnimation from "./components/SectionAnimation";
 import thaiIslandsImg from "./public/images/thaiislands-img.png";
 import iceOfCreamImg from "./public/images/ice-of-cream-img-1.png";
@@ -11,6 +11,7 @@ import Script from 'next/script';
 
 export default function Home() {
   let ref = useRef(null);
+  const container = useRef();
   const [ media, setMedia ] = useState("desktop");
   const [menuIsActive, setMenuIsActive] = useState(true);
   const projects = [
@@ -32,6 +33,19 @@ export default function Home() {
   const delay = 3.5;
   const duration = 1.5;
 
+  let { scrollYProgress: scrollYProgressEndStart } = useScroll({
+    target: container,
+    offset: ['start start', 'end start']
+  });
+
+    // Set the display value to switch by toggle (ease fnc) between flex and none
+    const isDisplayed = useTransform(
+      scrollYProgressEndStart,
+      [0, 0.15, 0.25, 0.75, 1],
+      ["hidden", "hidden", "hidden", "visible", "visible"],
+      { ease: (t) => Math.round(t) }
+  );
+
   useEffect(() => {
     const { width } = ref.current.getBoundingClientRect();    
     setMedia(width < 680 ? "mobile" : "desktop") 
@@ -51,7 +65,7 @@ export default function Home() {
             <motion.div className="projects-content relative">
               <div className="projects-title uppercase">Projects</div>
               <motion.div
-                // style={{ opacity: 0, visibility: isDisplayed  }}
+                style={{ opacity: 0, visibility: isDisplayed  }}
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 2.25, delay: 0.3 }}
