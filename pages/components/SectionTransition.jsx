@@ -337,7 +337,7 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
             
             <motion.div
               style={{ opacity: 0 }}
-              initial={{ opacity: 0, y: '-25px' }}
+              initial={{ opacity: 0, y: '25px' }}
               whileInView={inView}
               transition={{ duration: 0.4, delay: delay }}
               className="projects-inner-content absolute top-16">
