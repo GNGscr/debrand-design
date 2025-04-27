@@ -357,7 +357,7 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
                         <motion.div
                           className="proj-title"
                           initial={{ opacity: 0 }}
-                          whileInView={{ opacity: 0.7 }}
+                          whileInView={{ opacity: 0.9 }}
                           // transition={{ duration: 1.15, delay: 3.85 }}
                           transition={{ duration: 1.15, delay: 4.15 }}
                         >{title}
