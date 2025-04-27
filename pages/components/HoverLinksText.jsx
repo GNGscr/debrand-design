@@ -89,9 +89,9 @@ const Link = ({ heading, subheading, href, cta, media, index }) => {
     } else if (heading === "PHONE") {
       const phoneNumber = href.replace(/[^0-9+]/g, '');
       const telLink = `tel:${phoneNumber}`;
-      const facetimeLink = `facetime:${phoneNumber}`;
+      // const facetimeLink = `facetime:${phoneNumber}`;
       window.location.href = telLink;
-      window.open(facetimeLink, '_blank');
+      window.open(telLink, '_blank');
     } else if (heading === "WHATSAPP") {
       window.open(`https://wa.me/${href.replace(/[^0-9]/g, '')}`, '_blank');
     } else if (heading === "LINKEDIN") {
