@@ -309,10 +309,11 @@ button:focus {
   z-index: 9 !important;
   max-width: 100%;
   margin-top: -1.5rem;
+  margin-left: -3rem;
 }
 
 #projects {
-  
+
 }
 
 a.proj-a {
