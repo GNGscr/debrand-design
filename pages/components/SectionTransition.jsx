@@ -53,7 +53,7 @@ const Section1 = ({scrollYProgress, media}) => {
           style={media === 'desktop' ? { scale, rotate } : { scale, rotate }}
           id="about"
           className={`sticky top-0 h-screen bg-black text-[3.25vw] flex flex-col
-            items-center justify-center text-white pt-[12.5vh] pb-[0vh] mb-[7.5vh]`}>
+            items-center justify-center text-white pt-[15vh] pb-[0vh] mb-[7.5vh]`}>
             <ShineWaveAnimation text="About Me" />
             <div className="about-content flex gap-[10rem] mt-[1rem]">
                 <div style={{clipPath: "xywh(0 5px 100% 75% round 15% 0)" }}
