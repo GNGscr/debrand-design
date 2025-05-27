@@ -335,7 +335,7 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
               initial={{ opacity: 0, y: '25px' }}
               whileInView={inView}
               transition={{ duration: 0.4, delay: delay }}
-              className="projects-inner-content absolute top-16" id="projects">
+              className="projects-inner-content absolute top-16 flex gap-4" id="projects">
               {
                 projects.map(({link, image, title}, index) => {
                   return (
@@ -345,7 +345,6 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
                           backgroundPosition: 'center',
                           borderRadius: '0.85rem',
                           backgroundImage: `url(${image})`,
-                          // backgroundSize: "cover",
                           backgroundSize: "contain",
                           backgroundRepeat: 'no-repeat',
                       }}>
@@ -353,7 +352,6 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
                           className="proj-title"
                           initial={{ opacity: 0 }}
                           whileInView={{ opacity: 0.9 }}
-                          // transition={{ duration: 1.15, delay: 3.85 }}
                           transition={{ duration: 1.15, delay: 4.15 }}
                         >{title}
                         </motion.div>
