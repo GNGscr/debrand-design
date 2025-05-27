@@ -395,6 +395,10 @@ a.proj-a:hover  .proj-title {
   display: flex;
 }
 
+#projects {
+  margin-top: -10vh;
+}
+
 
 
 /* RIVE */
