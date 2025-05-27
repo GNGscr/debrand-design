@@ -70,13 +70,7 @@ const Section1 = ({scrollYProgress, media}) => {
                 <div className="right-section flex flex-col">
                     <div className="about-me-title mt-[0.5rem] mb-[0.5rem] text-[1.4rem]">As a Creative Developer..</div>
                     <div className="about-me-title mt-[1rem] mb-[1rem] text-[1.25rem] flex flex-wrap w-[25rem]">
-                        In the last 5 years I worked with Forter. Mainly creating tools and bla blas. Company tools where doing UX/UI, design and development.
-                    </div>
-                    <div className="about-me-title mt-[1rem] mb-[1rem] text-[1.25rem] flex flex-wrap w-[25rem]">
-                      Working with Hamaagal, a worldwide platform that connects communities and buissnesses.
-                    </div>
-                    <div className="about-me-title mt-[1rem] mb-[1rem] text-[1.25rem] flex flex-wrap w-[25rem]">
-                      Currently contributing to an ongoing digital project for helping children.
+                    In the last 5 years I worked with Forter. Contributing to the team effort, migrating old code to new, doing face lifts, creating in house tools for the company. In some projects doing UX/UI, design and development.
                     </div>
                 </div>
             </div>
