@@ -310,9 +310,7 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
           </motion.div>
         </div>
 
-        <div
-          id="projects"
-          className="projects">
+        <div className="projects">
           <motion.div className="projects-content relative">
             <div className="projects-title uppercase">Projects</div>
             <motion.div
@@ -334,7 +332,7 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
               initial={{ opacity: 0, y: '25px' }}
               whileInView={inView}
               transition={{ duration: 0.4, delay: delay }}
-              className="projects-inner-content absolute top-16">
+              className="projects-inner-content absolute top-16" id="projects">
               {
                 projects.map(({link, image, title}, index) => {
                   return (
