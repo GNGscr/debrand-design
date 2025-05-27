@@ -68,8 +68,8 @@ const Section1 = ({scrollYProgress, media}) => {
                     />
                 </div>
                 <div className="right-section flex flex-col">
-                    <div className="about-me-title mt-[0.5rem] mb-[0.5rem] text-[1.85rem]">As a Creative Developer..</div>
-                    <div className="about-me-title mt-[1.5rem] mb-[1rem] text-[1.5rem] flex flex-wrap w-[25rem]">
+                    <div className="about-me-title mt-[0.5rem] mb-[0.5rem] text-[2.15rem]">As a Creative Developer..</div>
+                    <div className="about-me-title mt-[2.5rem] mb-[1rem] text-[1.75rem] flex flex-wrap w-[25rem]">
                     In the last 5 years I worked with Forter. Contributing to the team effort, migrating old code to new, doing face lifts, creating in house tools for the company. In some projects doing UX/UI, design and development.
                     </div>
                 </div>
@@ -332,7 +332,7 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
               initial={{ opacity: 0, y: '25px' }}
               whileInView={inView}
               transition={{ duration: 0.4, delay: delay }}
-              className="projects-inner-content absolute top-16" id="projects">
+              className="projects-inner-content absolute top-16">
               {
                 projects.map(({link, image, title}, index) => {
                   return (
@@ -361,6 +361,7 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
               }
             </motion.div>
           </motion.div>
+          <div id="projects"></div>
         </div>
       </div>
     )
