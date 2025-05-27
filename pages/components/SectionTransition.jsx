@@ -53,7 +53,7 @@ const Section1 = ({scrollYProgress, media}) => {
           style={media === 'desktop' ? { scale, rotate } : { scale, rotate }}
           id="about"
           className={`sticky top-0 h-screen bg-black text-[3.25vw] flex flex-col
-            items-center justify-center text-white pt-[10vh] pb-[0vh] mb-[7.5vh]`}>
+            items-center justify-center text-white pt-[12.5vh] pb-[0vh] mb-[7.5vh]`}>
             <ShineWaveAnimation text="About Me" />
             <div className="about-content flex gap-[10rem] mt-[1rem]">
                 <div style={{clipPath: "xywh(0 5px 100% 75% round 15% 0)" }}
@@ -68,8 +68,8 @@ const Section1 = ({scrollYProgress, media}) => {
                     />
                 </div>
                 <div className="right-section flex flex-col">
-                    <div className="about-me-title mt-[0.5rem] mb-[0.5rem] text-[2.15rem]">As a Creative Developer..</div>
-                    <div className="about-me-title mt-[2.5rem] mb-[1rem] text-[1.65rem] flex flex-wrap w-[25rem]">
+                    <div className="about-me-title mt-[1rem] mb-[0.5rem] text-[2rem]">As a Creative Developer..</div>
+                    <div className="about-me-title mt-[2rem] mb-[1rem] text-[1.5rem] flex flex-wrap w-[25rem]">
                     In the last 5 years I worked with Forter. Contributing to the team effort, migrating old code to new, doing face lifts, creating in house tools for the company. In some projects doing UX/UI, design and development.
                     </div>
                     {/* <div className="about-me-title mt-[1rem] mb-[1rem] text-[1.25rem] flex flex-wrap w-[25rem]">
