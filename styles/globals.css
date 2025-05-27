@@ -396,6 +396,7 @@ a.proj-a:hover  .proj-title {
 }
 
 #projects {
+  position: relative;
   margin-top: -10vh;
 }
 
