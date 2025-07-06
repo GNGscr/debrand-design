@@ -43,8 +43,8 @@ This project was built with a **UX-first** and **design-led** development proces
 
 ## 💡 UX & Interaction Highlights
 
-- 🔁 **Scroll-based icon color transitions**:
-  Navigation icons shift color dynamically based on scroll position.
+- 🔁 **Scroll-based menu link color transitions**:
+  Navigation menu links shift color dynamically based on scroll position.
 
 - 🪄 **Section entrances**:
   Animated reveals bring sections into view with smooth stagger effects.
