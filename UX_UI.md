@@ -109,9 +109,3 @@ Wireframes were created to define layout structure and interaction.
   -  Meta tags for SEO and social previews
   -  Optional dark/light theme
   -  Internationalization (Hebrew/English)
-
----
-
-## 📬 For questions, feedback, or collaboration:
-LinkedIn
-📧 ehrlichdaniel1@gmail.com | de.brand808@gmail.com
