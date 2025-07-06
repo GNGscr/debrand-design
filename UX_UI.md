@@ -13,6 +13,28 @@ The goal of this project is to create a distinct, memorable, and interactive one
 
 ---
 
+## 📐 UX/UI Approach
+
+**This project was planned visually before development.**
+
+Design was driven by wireframes, motion sketches, and interaction principles.
+
+**🔍 Highlights:**
+
+  -  🌀 Scroll-based color transitions for icons and elements
+  -  🎭 Animated content reveals based on user flow
+  -  🧘 Staggered motion to guide attention and soften transitions
+  -  💡 Desktop vs Mobile divergence: content selectively shown/hidden based on screen size
+  -  ✨ Microinteractions and cursor feedback throughout
+
+**📱 Responsiveness**
+
+  -  ✅ Mobile & tablet-friendly layout
+  -  ✅ Touch-aware interactions
+  -  ✅ Desktop hover states and expanded visuals
+
+---
+
 ## 📐 Layout Structure
 
 The site is structured as a **one-page scroll experience** with multiple visual layers:
@@ -69,3 +91,27 @@ Each section flows into the next with seamless vertical transitions.
 
 ---
 
+## 📂 Wireframes (Design Planning)
+
+Wireframes were created to define layout structure and interaction.
+
+**They are available in the wireframes/ folder:**
+
+[Desktop Wireframe]
+
+[Mobile Wireframe]
+
+---
+
+## 💡 Future Ideas
+
+  -  Better accessibility support (focus traps, skip links)
+  -  Meta tags for SEO and social previews
+  -  Optional dark/light theme
+  -  Internationalization (Hebrew/English)
+
+---
+
+## 📬 For questions, feedback, or collaboration:
+LinkedIn
+📧 ehrlichdaniel1@gmail.com | de.brand808@gmail.com
