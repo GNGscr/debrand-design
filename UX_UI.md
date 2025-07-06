@@ -35,7 +35,7 @@ Design was driven by wireframes, motion sketches, and interaction principles.
 
 ---
 
-## 📐 Layout Structure
+## 📁 Layout Structure
 
 The site is structured as a **one-page scroll experience** with multiple visual layers:
 - **Intro animation section**: A fullscreen animated splash with logo reveal and call-to-action
