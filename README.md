@@ -36,7 +36,7 @@ Wireframes, flow, and interaction documentation:
 
 - [`UX_UI.md`](./UX_UI.md)
 - [`UX_FLOW.md`](./UX_FLOW.md)
-- [`WIREFRAMES.md`](./WIREFRAMES.md)
+<!-- - [`WIREFRAMES.md`](./WIREFRAMES.md)§ -->
 
 ---
 
