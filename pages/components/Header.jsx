@@ -2,10 +2,14 @@
 import { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import { easeInOut, motion, useTransform, useScroll } from "framer-motion";
+import { useSearchParams, useRouter } from "next/navigation";
 
 export default function Header({ media }) {
   const comp = useRef(null);
   const [ currentButton, setCurrentButton ] = useState();
+  const searchParams = useSearchParams();
+  const params = new URLSearchParams(searchParams.toString());
+  const router = useRouter();
 
   useEffect(() => {
     let ctx = gsap.context(() => {
@@ -26,8 +30,13 @@ export default function Header({ media }) {
         if (entry.isIntersecting) {
           const intersectingEntry = entry.target.id;
           setCurrentButton(intersectingEntry);
-        }
-      });
+          // Update the URL with the section query parameter
+          const params = new URLSearchParams(window.location.search);
+          params.set("section", intersectingEntry);
+          // Use replace to avoid adding a new entry in the history stack
+          router.replace(`?${params.toString()}`, { scroll: false });
+            }
+          });
     };
   
     const observer = new IntersectionObserver(intersectionsIterator, {
