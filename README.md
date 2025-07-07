@@ -1,6 +1,14 @@
 # ✨ DEBRAND DESIGN – Portfolio Website
 
+---
+
+## 📌 Description
+
+Interactive portfolio showcasing animations and UX-driven visuals built with Rive & Framer Motion.
+
 **DEBRAND DESIGN** is a frontend portfolio web app designed for high-impact **visual storytelling**, **animated transitions**, and responsive interaction — crafted with a UX-first mindset.
+
+---
 
 ## 📸 Preview
 
