@@ -54,6 +54,31 @@ This project was built with a **UX-first** and **design-led** development proces
 
 ---
 
+
+## 🐬 Custom Animation Highlight – Rive Integration
+
+A custom entrance animation of a **waving dolphin** is featured in the Projects section.
+
+- 🎨 **Design**: The dolphin was designed manually in **Figma**, based on inspirational references and adapted to match the app's style and tone.
+- 🔧 **Animation**: Animated using **Rive**, an advanced real-time animation engine.
+- ⚙️ **Integration**: Controlled via JavaScript and React to match scroll behavior and timing.
+- 💡 Originally created for a youth/education-based learning app (volunteer project that was never launched), it was repurposed here to showcase animation capabilities.
+
+This demonstrates:
+- Custom asset creation
+- Integration of external animation tools in production
+- Crafting playful, interactive experiences with attention to performance and UX
+
+---
+
+
+## 🔍 Summary
+
+Debrand Design showcases a unique fusion of **visual storytelling, animation precision, and minimalist UX structure**.  
+It's meant to function as both a portfolio and a product that reflects the developer's values: clarity, creativity, and interactivity.
+
+---
+
 ## 🧱 Tech Stack
 
 | Layer       | Technology                         |
