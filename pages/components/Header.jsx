@@ -168,8 +168,8 @@ const ZoopEffect = ({ children, href, media, current, name }) => {
         style={{
           lineHeight: 0.8,
           color: media === "desktop" ? color : mobileColor,
-          // fontWeight: isCurrent ? 500 : 700,
-          // textShadow: isCurrent ? "0 0 4px rgba(255, 192, 203, 0.5)" : "none",
+          opacity: isCurrent ? 1 : 0.65,
+          transition: "opacity 0.3s ease",
         }}
     >
       <div>
