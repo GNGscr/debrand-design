@@ -68,8 +68,8 @@ const Section1 = ({scrollYProgress, media}) => {
                     />
                 </div>
                 <div className="right-section flex flex-col">
-                    <div className="about-me-title mt-[1rem] mb-[0.5rem] text-[1.85rem]">As a Creative Developer..</div>
-                    <div className="about-me-title mt-[2rem] mb-[1rem] text-[1.4rem] flex flex-wrap w-[25rem]">
+                    <div className="about-me-title mt-[1rem] mb-[0.5rem] text-[2rem]">As a Creative Developer..</div>
+                    <div className="about-me-title mt-[2rem] mb-[1rem] text-[1.5rem] flex flex-wrap w-[25rem]">
                     In the last 5 years I worked with Forter. Contributing to the team effort, migrating old code to new, doing face lifts, refactoring, creating in house tools for the company. In some projects doing UX/UI, design and development.
                     </div>
                     {/* <div className="about-me-title mt-[1rem] mb-[1rem] text-[1.25rem] flex flex-wrap w-[25rem]">
@@ -176,31 +176,7 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
         ["hidden", "hidden", "hidden", "visible", "visible"],
         { ease: (t) => Math.round(t) }
     );
-    
-    useEffect(() => {
-      // console.log('menuIsActive: ', menuIsActive);
-    //   if (menuIsActive === true) {
-        // setTimeout(() => {
-          // setMenuIsActive(false);
-        // }, 1000);
-    //   }
-      
-  // //     // setActivateRive(true);
-  //     setTimeout(() => { 
-  //       // setMenuIsActive(false);
-  // //       // clearInterval(interval);
-  // //       // setIsStartAnimation(false)
 
-  // //       // clearTimeout(timeout);
-  // //     // setActivateRive(true); 
-  //   }, 2000);
-  // console.log('is displayed: ', isDisplayed.current)
-  // console.log('menu-is-active: ', menuIsActive);
-  
-  }, [menuIsActive, isDisplayed]);
-
-  // console.log(media);
-  
 
     return (
       <div className="sticky top-0 h-[237.5vh]" style={{ height: media === 'desktop' ? '237.5vh' : '100vh', width: '100%' }}>
