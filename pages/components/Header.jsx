@@ -2,14 +2,14 @@
 import { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import { easeInOut, motion, useTransform, useScroll } from "framer-motion";
-import { useSearchParams, useRouter } from "next/navigation";
+// import { useSearchParams, useRouter } from "next/navigation";
 
 export default function Header({ media }) {
   const comp = useRef(null);
   const [ currentButton, setCurrentButton ] = useState();
-  const searchParams = useSearchParams();
-  const params = new URLSearchParams(searchParams.toString());
-  const router = useRouter();
+  // const searchParams = useSearchParams();
+  // const params = new URLSearchParams(searchParams.toString());
+  // const router = useRouter();
 
   useEffect(() => {
     let ctx = gsap.context(() => {
