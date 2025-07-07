@@ -30,6 +30,16 @@ This project was built with a **UX-first** and **design-led** development proces
 
 ---
 
+## 📐 UX/UI Design Assets
+
+Wireframes, flow, and interaction documentation:
+
+- [`UX_UI.md`](./UX_UI.md)
+- [`UX_FLOW.md`](./UX_FLOW.md)
+- [`WIREFRAMES.md`](./WIREFRAMES.md)
+
+---
+
 ## 🎯 Key Features
 
 - 🎞️ **Intro animation** — reveals content in a staged, cinematic way
@@ -53,7 +63,6 @@ This project was built with a **UX-first** and **design-led** development proces
   Interactive visual responses to user actions for a lively experience.
 
 ---
-
 
 ## 🐬 Custom Animation Highlight – Rive Integration
 
@@ -138,16 +147,6 @@ Then go to `http://localhost:3000` to view the app.
 
 - Deployed on **Vercel**
 - Optimized for image delivery, scroll performance, and loading behavior
-
----
-
-## 📐 UX/UI Design Assets
-
-Wireframes, flow, and interaction documentation:
-
-- [`UX_UI.md`](./UX_UI.md)
-- [`UX_FLOW.md`](./UX_FLOW.md)
-- [`WIREFRAMES.md`](./WIREFRAMES.md)
 
 ---
 
