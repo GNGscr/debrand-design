@@ -10,7 +10,6 @@ export default function ProjectsSection({ media, container }) {
   const [menuIsActive, setMenuIsActive] = useState(true);
   const inView = { opacity: 1, x: 0, y: 0 };
   const delay = 3.5;
-  const duration = 1.5;
 
   let { scrollYProgress: scrollYProgressEndStart } = useScroll({
     target: container,

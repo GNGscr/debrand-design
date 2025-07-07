@@ -4,7 +4,7 @@ import myImg from "../public/images/my-photo.jpeg";
 import thaiIslandsImg from "../public/images/thaiislands-img.png";
 import iceOfCreamImg from "../public/images/ice-of-cream-img-1.png";
 import { useEffect, useRef, useState } from "react";
-import { useTransform, useScroll, motion, useAnimate, useMotionValue } from 'framer-motion';
+import { useTransform, useScroll, motion, useAnimate } from 'framer-motion';
 import Lenis from "@studio-freight/lenis";
 import ShineWaveAnimation from "./ShineWaveAnimation.jsx";
 import SectionAnimation from "./SectionAnimation";
@@ -39,7 +39,6 @@ export default function SectionTransition({ media }) {
           scrollYProgress={scrollYProgress}
           scrollYProgressEndStart={scrollYProgressEndStart}
           media={media}
-          // scrollYProgressNew={scrollYProgressNew}
            />
       </div>
     )
@@ -72,9 +71,6 @@ const Section1 = ({scrollYProgress, media}) => {
                     <div className="about-me-title mt-[2rem] mb-[1rem] text-[1.5rem] flex flex-wrap w-[25rem]">
                     In the last 5 years I worked with Forter. Contributing to the team effort, migrating old code to new, doing face lifts, refactoring, creating in house tools for the company. In some projects doing UX/UI, design and development.
                     </div>
-                    {/* <div className="about-me-title mt-[1rem] mb-[1rem] text-[1.25rem] flex flex-wrap w-[25rem]">
-                      Love .
-                    </div> */}
                 </div>
             </div>
         </motion.div>
@@ -83,9 +79,7 @@ const Section1 = ({scrollYProgress, media}) => {
 
 const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
 
-  const [ isStartAnimation, setIsStartAnimation] = useState(false);
   const [menuIsActive, setMenuIsActive] = useState(true);
-  // const [activateRive, setActivateRive] = useState(false);
   
   const firstPara = {
     "line1": "My Passion is creating a Unique",
@@ -140,41 +134,13 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
     await animate("#pull-line", { opacity: 0 }, { duration: 0.1, delay: 0.1 });
   }
 
-  const goToLink = (e, link) => {
-    console.log(link);
-    e.preventDefault();
-    
-    // alert('suppose to go to size')
-  }
-  // let oneRound = 1;
-  // let interval = {};
-  const testing = async () => {
-    console.log('instance');
-    setMenuIsActive(true);
-    
 
-    // setActivateRive(true);
-    // useEffect(() => {
-      // setInterval(() => {
-      //   setMenuIsActive(true);
-      // }, 0);
-      // oneRound++;
-      // interval = setInterval(() => {
-      //   // setIsStartAnimation(true)
-
-      // }, 0);
-
-      // if (!menuIsActive) {
-      // }
-      // }, []);
-    }
-
-      // Set the display value to switch by toggle (ease fnc) between flex and none
-      const isDisplayed = useTransform(
-        scrollYProgressEndStart,
-        [0, 0.15, 0.25, 0.75, 1],
-        ["hidden", "hidden", "hidden", "visible", "visible"],
-        { ease: (t) => Math.round(t) }
+    // Set the display value to switch by toggle (ease fnc) between flex and none
+    const isDisplayed = useTransform(
+      scrollYProgressEndStart,
+      [0, 0.15, 0.25, 0.75, 1],
+      ["hidden", "hidden", "hidden", "visible", "visible"],
+      { ease: (t) => Math.round(t) }
     );
 
 

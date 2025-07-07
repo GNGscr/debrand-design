@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useRive, useStateMachineInput } from 'rive-react';
-// import DolphinRive from './pages/public/dolphin.riv';
 
 const STATE_MACHINE_NAME = "State Machine 1";
 
@@ -23,11 +22,8 @@ const SectionAnimation = ({ menuIsActive, media }) => {
     }
     
     if (rive) {
-    //   console.log(rive.contents);
       triggerSuccess()
     }
-
-    // console.log('anim: ', menuIsActive);
     
     return (
         <motion.div
@@ -35,14 +31,10 @@ const SectionAnimation = ({ menuIsActive, media }) => {
             className="slide-in"
             initial={{ opacity: 0 }}
             animate={ menuIsActive ? { opacity: 1 } : { opacity: 0 } }
-            // whileInView={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
         >
             <motion.div
-                // initial={{ opacity: 0 }}
-                // animate={ menuIsActive ? { opacity: 1 } : { opacity: 0 } }
-                // transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.25 }}
                 className={`flex justify-center align-center`}
                 style={{
                     padding: "0",
@@ -65,10 +57,4 @@ const SectionAnimation = ({ menuIsActive, media }) => {
     );
 };
 
-// {/* <Image
-// src="/logo.png"
-// alt="Mascot"
-// height={240}
-// width={240}
-// className="hidden lg:block cover" /> */}
 export default SectionAnimation;
