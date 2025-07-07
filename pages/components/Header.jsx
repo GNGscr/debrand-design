@@ -31,10 +31,10 @@ export default function Header({ media }) {
           const intersectingEntry = entry.target.id;
           setCurrentButton(intersectingEntry);
           // Update the URL with the section query parameter
-          const params = new URLSearchParams(window.location.search);
-          params.set("section", intersectingEntry);
+          // const params = new URLSearchParams(window.location.search);
+          // params.set("section", intersectingEntry);
           // Use replace to avoid adding a new entry in the history stack
-          router.replace(`?${params.toString()}`, { scroll: false });
+          // router.replace(`?${params.toString()}`, { scroll: false });
             }
           });
     };
