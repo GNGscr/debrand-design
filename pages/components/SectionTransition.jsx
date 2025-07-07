@@ -89,15 +89,15 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
 
   const projects = [
     {
-      "title": "Ice Of Cream",
-      "link": "https://ice-of-cream.vercel.app/",
-      "image": iceOfCreamImg.src,
-      "content": {}
-    },
-    {
       "title": "Thaiislands",
       "link": "https://thaiislands.vercel.app/about",
       "image": thaiIslandsImg.src,
+      "content": {}
+    },
+    {
+      "title": "Ice Of Cream",
+      "link": "https://ice-of-cream.vercel.app/",
+      "image": iceOfCreamImg.src,
       "content": {}
     }
   ];
