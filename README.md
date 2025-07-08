@@ -50,7 +50,7 @@ Wireframes, flow, and interaction documentation:
 
 ## 🎯 Key Features
 
-- 🎞️ **Intro animation** — reveals content in a staged, cinematic way
+- 🎞️ **Intro animation** — reveals content in a staged, cinematic way (created with gsap)
 - 🧭 **Scroll-based interactivity** — icons and sections transition with movement
 - ✨ **Framer Motion animations** — microinteractions, entrance effects, hover
 - 📱 **Mobile optimization** — hides certain desktop-only sections
