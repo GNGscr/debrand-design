@@ -90,7 +90,7 @@ This demonstrates:
 
 ## 🔍 Summary
 
-Debrand Design showcases a unique fusion of **visual storytelling, animation precision, and minimalist UX structure**.  
+Debrand Portfolio showcases a unique fusion of **visual storytelling, animation precision, and minimalist UX structure**.  
 It's meant to function as both a portfolio and a product that reflects the developer's values: clarity, creativity, and interactivity.
 
 ---
