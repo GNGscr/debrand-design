@@ -41,7 +41,7 @@ The focus is on **entry flow**, **section progression**, **interactions**, and *
 
 ## 🔄 Transitions & Motion
 
-- Built using **Framer Motion && GSAP**
+- Built using **Framer Motion & GSAP**
 - Animations include:
   - Page fade-in
   - Section-by-section scroll entry
