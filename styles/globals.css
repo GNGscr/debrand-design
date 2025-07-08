@@ -709,6 +709,7 @@ a.proj-a:hover .proj-title {
   .projects {
     padding: 0;
     height: 100vh;
+    margin-top: 0;
   }
 
   .proj-title {
