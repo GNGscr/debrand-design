@@ -70,4 +70,4 @@ The focus is on **entry flow**, **section progression**, **interactions**, and *
 
 ---
 
-This walkthrough helps understand the **narrative experience** built into `debrand-design`, and how users are led through the portfolio journey with clear visual storytelling.
+This walkthrough helps understand the **narrative experience** built into `debrand portfolio`, and how users are led through the journey with clear visual storytelling.
