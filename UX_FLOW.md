@@ -1,33 +1,28 @@
 
-# 🧭 UX Flow – DEBRAND DESIGN
+# 🧭 UX Flow – DEBRAND Portfolio Website
 
 This document walks through the **user journey** and interaction experience within the `debrand-design` portfolio app.  
 The focus is on **entry flow**, **section progression**, **interactions**, and **responsiveness**, from both **desktop** and **mobile** perspectives.
 
 ---
 
-## 🧪 Initial User Experience
-
-### 👋 Entrance Animation
-- Upon load, users are greeted with an animated **waving dolphin**.
-- The dolphin animation is built using **Rive**, inspired by modern playful animation styles.
-- Animation fades smoothly, leading into the main screen.
-
-### 🎯 Purpose
-- Create delight and personality.
-- Set a playful but professional tone for the site.
-- Visually signal that this is a custom-crafted experience.
-
----
-
 ## 🖥 Desktop Flow
 
-### 1. **Hero Section**
+### 1. **Hero Section** - Created using gsap
 - Fades in with animation.
 - Shows the logo and short tagline.
 - Navigation appears subtly, not stealing focus from the center.
 
 ### 2. **Projects Section**
+
+- **👋 Dolphin animation**
+    - Upon load, users are greeted with an animated **waving dolphin**.
+    - The dolphin animation is built using **Rive**, inspired by modern playful animation styles.
+    - Animation fades smoothly, leading into the main screen.
+    **🎯 Purpose**
+    - Create delight and personality.
+    - Set a playful but professional tone for the site.
+    - Visually signal that this is a custom-crafted experience.
 - Scroll-reveal with staggered entrance of project cards.
 - Each card includes:
   - Image preview
@@ -41,16 +36,6 @@ The focus is on **entry flow**, **section progression**, **interactions**, and *
 - Concluding call-to-action.
 - Link to contact or LinkedIn.
 - Light scroll-reveal or fade-in.
-
----
-
-## 📱 Mobile Flow
-
-### 🔍 Differences from Desktop:
-- **Dolphin animation** may be trimmed or appear differently based on viewport.
-- Some sections are **intentionally hidden** to reduce scroll fatigue.
-- All elements are **tappable**, large hit areas for mobile UX.
-- Scroll-based animation is minimized for performance.
 
 ---
 

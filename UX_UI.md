@@ -1,6 +1,6 @@
-# 🎨 UX/UI Principles – Debrand Design
+# 🎨 UX/UI Principles – Debrand Portfolio Website
 
-This document outlines the user experience and interface design principles behind the **Debrand Design** portfolio website.  
+This document outlines the user experience and interface design principles behind the **Debrand** portfolio website.  
 The goal of this project is to create a distinct, memorable, and interactive one-pager that reflects the developer's design sensibility, technical skills, and creative approach.
 
 ---
@@ -39,6 +39,7 @@ Design was driven by wireframes, motion sketches, and interaction principles.
 
 The site is structured as a **one-page scroll experience** with multiple visual layers:
 - **Intro animation section**: A fullscreen animated splash with logo reveal and call-to-action
+    - 📌 Created with gsap, to display usage of a different animation library besides framer motion
 - **Projects showcase**: Scroll-triggered entry with hover effects and clickable project cards
 - **About / bio section**: Structured block highlighting background, strengths, and mindset
 - **Contact / footer**: Final CTA section encouraging collaboration or outreach
@@ -84,12 +85,13 @@ Each section flows into the next with seamless vertical transitions.
 
 ## 🛠 Tools Used for UX/UI
 
+- **GSAP** – Intro animation
 - **Framer Motion** – Animations & transitions
 - **Tailwind CSS** – Utility-first styling and responsive layout
 - **React** – UI component structure
 - **Custom CSS Modules** – For scoped component styles
 
----
+<!-- ---
 
 ## 📂 Wireframes (Design Planning)
 
@@ -99,7 +101,7 @@ Wireframes were created to define layout structure and interaction.
 
 [Desktop Wireframe]
 
-[Mobile Wireframe]
+[Mobile Wireframe] -->
 
 ---
 

@@ -1,4 +1,4 @@
-# ✨ DEBRAND DESIGN – Portfolio Website
+# ✨ DEBRAND – Portfolio Website
 
 ---
 
@@ -6,7 +6,7 @@
 
 <!-- Interactive portfolio showcasing animations and UX-driven visuals built with Rive & Framer Motion. -->
 
-**DEBRAND DESIGN** is a frontend portfolio web app designed for high-impact **visual storytelling**, **animated transitions**, and responsive interaction — crafted with a UX-first mindset.
+**DEBRAND** is a frontend portfolio web app designed for high-impact **visual storytelling**, **animated transitions**, and responsive interaction — crafted with a UX-first mindset.
 
 ---
 
@@ -31,7 +31,7 @@ Responsible for **ideation, UX planning, interface design, animations, dev & dep
 This project was built with a **UX-first** and **design-led** development process:
 
 - Clean visual hierarchy with scroll-aware behavior.
-- Smooth intro animation that sets tone and pace.
+- Smooth intro animation that sets tone and pace (using gsap).
 - Focus on **motion** and **interactivity** to guide user attention.
 - Mobile-specific section hiding to preserve focus.
 - Tailored flow for both mouse and touch navigation.
@@ -88,7 +88,6 @@ This demonstrates:
 
 ---
 
-
 ## 🔍 Summary
 
 Debrand Design showcases a unique fusion of **visual storytelling, animation precision, and minimalist UX structure**.  
@@ -102,7 +101,7 @@ It's meant to function as both a portfolio and a product that reflects the devel
 |------------|-------------------------------------|
 | Frontend   | React 18, Next.js                   |
 | Styling    | Tailwind CSS, CSS Modules           |
-| Animation  | Framer Motion                       |
+| Animation  | Framer Motion, gsap                 |
 | Deployment | Vercel                              |
 
 ---
