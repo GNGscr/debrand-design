@@ -62,11 +62,11 @@ The focus is on **entry flow**, **section progression**, **interactions**, and *
 ## ✅ Flow Summary
 
 | Step            | Interaction/Animation                              | Notes                                  |
-|-----------------|-----------------------------------------------------|----------------------------------------|
-| Page Load       | Dolphin appears, waves, fades out                   | Built in Rive                          |
-| Hero Reveal     | Fades in, logo and nav                              | Focused, clean intro                   |
-| Project Cards   | Scroll reveal + hover animation                     | Encourages discovery                   |
-| Call to Action  | Light animation and clear contact links             | Simple and direct                      |
+|-----------------|----------------------------------------------------|----------------------------------------|
+| Hero Reveal     | Fades in, logo and nav                             | Focused, clean intro                   |
+| Call to Action  | Light animation and clear contact links            | Simple and direct                      |
+| Section Load    | Dolphin appears, waves, fades out                  | Built in Rive                          |
+| Project Cards   | Scroll reveal + hover animation                    | Encourages discovery                   |
 
 ---
 

@@ -37,8 +37,6 @@ export default function Hero({ media }) {
     };
 
     const handleClick = (e) => {
-        e.preventDefault(); // Prevent default anchor behavior
-
         // Scroll to the section after the animation completes
         setTimeout(() => {
           const target = document.getElementById("about");
@@ -154,7 +152,10 @@ export default function Hero({ media }) {
                             </div>
                         </div>
                         <a href="#about"
-                          onClick={handleClick}
+                          onClick={e => {
+                            e.preventDefault();
+                            handleClick(e);
+                        }}
                           style={{ prespective: 1000 }}
                           className={`flex justify-center align-center
                             w-fit fixed bottom-24 text-black font-bold text-3xl`}
