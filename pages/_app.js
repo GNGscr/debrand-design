@@ -7,6 +7,7 @@ export default function App({ Component, pageProps }) {
   return (
     <Layout>
       <Script
+        async
         src={`https://www.googletagmanager.com/gtag/js?id=${NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`}
         strategy="afterInteractive"
       />
