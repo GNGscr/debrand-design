@@ -724,7 +724,7 @@ a.proj-a:hover .proj-title {
 
   .projects-inner-content {
     flex-direction: column;
-    top: 25vh !important;
+    top: 27.5vh !important;
     height: 60%;
     gap: 0rem;
   }
