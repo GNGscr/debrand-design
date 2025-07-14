@@ -37,7 +37,7 @@ export default function ProjectsSection({ media, container }) {
   ];
 
   return (
-    <div className="projects">
+    <div className="projects" id="projects-section">
       <motion.div className="projects-content relative">
         <div className="projects-title uppercase">Projects</div>
         <motion.div

@@ -53,7 +53,6 @@ export default function Header({ media }) {
 
   const handleClick = (e, inputTarget) => {
     e.preventDefault();
-
     const target = document.getElementById(inputTarget);
     const scrollPositions = {
       desktop: {
@@ -64,9 +63,10 @@ export default function Header({ media }) {
       },
       mobile: {
         home: 0,
-        projects: 500,
+        ["projects-section"]: 1000,
       },
     };
+    
     if (
       target &&
       [...Object.keys(scrollPositions[media])].includes(target.id)
@@ -128,7 +128,7 @@ export default function Header({ media }) {
           )}
           <a
             href="projects"
-            onClick={(e) => handleClick(e, "projects")}
+            onClick={(e) => handleClick(e, media === "mobile" ? "projects-section" :"projects")}
             id="header-li-3"
           >
             <li>

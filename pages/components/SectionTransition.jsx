@@ -254,11 +254,11 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
               </div>
           </motion.div>
         </div>
-
-        <div className="projects">
+        <div />
+        <div className="projects" id="projects">
           <motion.div className="projects-content relative">
             <div className="projects-title uppercase">Projects</div>
-            <motion.div id="projects"
+            <motion.div
               style={{ opacity: 0, visibility: isDisplayed  }}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
