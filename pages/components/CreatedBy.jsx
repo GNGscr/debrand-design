@@ -5,7 +5,7 @@ const CreatedBy = () => {
       <div className="relative">
         <div className="created-by">
             <span className={`debrand-logo text-[#ff0000]
-              ml-[4.5rem] mr-1 font-bold stars-wrapper`}
+               mr-1 font-bold stars-wrapper`}
               style={{
                 opacity: 0.8,
                 maxHeight: "40px",
