@@ -726,6 +726,7 @@ a.proj-a:hover .proj-title {
     flex-direction: column;
     top: 25vh !important;
     height: 60%;
+    gap: 0rem;
   }
 
   a.proj-a {
@@ -740,7 +741,7 @@ a.proj-a:hover .proj-title {
 
   .projects-title {
     position: absolute;
-    top: 12.5rem;
+    top: 5rem;
     font-size: 1.5rem;
   }
 
