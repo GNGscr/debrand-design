@@ -43,9 +43,25 @@ export default function Custom404() {
         </p>
         <Link
           href="/"
-          className="text-lg text-blue-300 hover:text-blue-200"
+          className="text-2xl text-blue-300 hover:text-blue-200"
         >
-          ← Back to Home
+          <motion.span
+          initial={{ scale: 1 }}
+          animate={{ scale: [1, 1.25, 1, 1.25, 1] }}
+          transition={{
+            delay: 0.5,
+            duration: 0.75,
+            ease: "easeInOut",
+            times: [0, 0.25, 0.5, 0.75, 1],
+          }}
+        >
+          <Link
+            href="/"
+            className="text-2xl text-blue-300 hover:text-blue-200"
+          >
+            ← Back to Home
+          </Link>
+        </motion.span>
         </Link>
       </div>
     </>
