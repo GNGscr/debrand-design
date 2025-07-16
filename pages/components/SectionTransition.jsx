@@ -283,7 +283,11 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
               {
                 projects.map(({link, image, title}, index) => {
                   return (
-                    <div key={index} className="proj-card-wrapper">
+                    <motion.div key={index} className="proj-card-wrapper"
+                      initial={{ scale: 1 }}
+                      whileHover={{ scale: 1.05 }}
+                      transition={{ duration: 0.25, ease: 'easeInOut' }}
+                      >
                       <a className="proj-a" href={link} target="_blank" rel="noopener noreferrer">
                         <div className="proj-card"
                           style={{
@@ -305,7 +309,7 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
                       <div className="proj-card-github">
                         <a href={projects[index].github} target="_blank" rel="noopener noreferrer">Go to Github repository</a>
                       </div>
-                    </div>
+                    </motion.div>
                   )
                 })
               }
