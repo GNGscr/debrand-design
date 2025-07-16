@@ -10,7 +10,7 @@
 
 ---
 
-## 🎥 Preview - Click image to view live preview
+## 🎥 Preview - Click image to view user flow
 
 [![Debrand Preview](./public/images/screenshot.png)](https://drive.google.com/file/d/1Fqx2qX-Oi18saRHwAe5lyTN50mw7zD5Q/view?usp=sharing)
 
