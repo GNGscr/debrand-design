@@ -495,7 +495,7 @@ a.proj-a:hover .proj-title {
   text-underline-offset: 3px;
 }
 
-.not-found-dolphin-animation > div > div {
+.not-found-dolphin-animation > div.slide-in {
   background: none !important;
 }
 
