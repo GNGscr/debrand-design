@@ -10,9 +10,10 @@
 
 ---
 
-## 📸 Preview
+## 🎥 Preview - Click image to view user flow
 
-![Debrand design Preview](./public/images/screenshot.png)
+[![Debrand Preview](./public/images/screenshot.png)](https://drive.google.com/file/d/1j-fh7Aa-kcRwtQPWQX0RBotABeljISU0/view?usp=sharing)
+
 
 **Live site:** [https://debrand-design.vercel.app](https://debrand-design.vercel.app)  
 **Code:** [GitHub Repository](https://github.com/GNGscr/debrand-design)
