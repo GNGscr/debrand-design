@@ -467,6 +467,9 @@ a.proj-a:hover .proj-title {
   z-index: 8;
 }
 
+.slide-in {
+  width: 100% !important;
+}
 .slide-in>div>img {
   aspect-ratio: 4/3;
 }
@@ -801,7 +804,7 @@ a.proj-a:hover .proj-title {
     padding-top: 10px;
     font-size: 1rem;
   }
-  
+
   .back-home {
     position: relative;
     top: 5rem;
