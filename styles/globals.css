@@ -796,6 +796,10 @@ a.proj-a:hover .proj-title {
     top: 12rem;
   }
 
+  .not-found-header {
+    margin-top: -5rem;
+  }
+
   .sentence {
     display: none;
   }
