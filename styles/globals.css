@@ -768,9 +768,9 @@ a.proj-a:hover .proj-title {
 
   .projects-inner-content {
     flex-direction: column;
-    top: 35vh !important;
+    top: 30vh !important;
     height: 60%;
-    gap: 0rem;
+    gap: 5rem;
   }
 
   a.proj-a {
@@ -793,6 +793,6 @@ a.proj-a:hover .proj-title {
     top: 12rem;
   }
   .proj-card-github {
-    padding-top: 1rem;
+    padding-top: 15px;
   }
 }
