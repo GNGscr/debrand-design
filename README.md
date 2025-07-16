@@ -10,12 +10,9 @@
 
 ---
 
-## 📸 Preview
+## 🎥 Preview - Click image to view live preview
 
 [![Debrand Preview](./public/images/screenshot.png)](https://drive.google.com/file/d/1Fqx2qX-Oi18saRHwAe5lyTN50mw7zD5Q/view?usp=sharing)
-<!-- 🎥 ![Debrand Preview](./public/images/screenshot.png) -->
-
-<!-- ## 🎥 Live Preview -->
 
 ---
 
