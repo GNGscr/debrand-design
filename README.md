@@ -12,10 +12,10 @@
 
 ## 📸 Preview
 
-![Debrand Preview](./public/images/screenshot.png)
+[![Debrand Preview](./public/images/screenshot.png)](https://drive.google.com/file/d/1XyzABC12345678/view?usp=sharing)
+<!-- 🎥 ![Debrand Preview](./public/images/screenshot.png) -->
 
-<!-- ## 🎥 Live Preview
-[Debrand user flow Preview (MP4)](./public/images/debrand-user-flow-vid.mp4) -->
+<!-- ## 🎥 Live Preview -->
 
 ---
 
