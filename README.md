@@ -14,8 +14,8 @@
 
 ![Debrand Preview](./public/images/screenshot.png)
 
-## 🎥 Live Preview
-[Debrand user flow Preview (MP4)](./public/images/debrand-user-flow-vid.mp4)
+<!-- ## 🎥 Live Preview
+[Debrand user flow Preview (MP4)](./public/images/debrand-user-flow-vid.mp4) -->
 
 ---
 
