@@ -92,13 +92,15 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
       "title": "Thaiislands",
       "link": "https://thaiislands.vercel.app/about",
       "image": thaiIslandsImg.src,
-      "content": {}
+      "content": {},
+      "github": "https://github.com/GNGscr/Thaiislands"
     },
     {
       "title": "Ice Of Cream",
       "link": "https://ice-of-cream.vercel.app/",
       "image": iceOfCreamImg.src,
-      "content": {}
+      "content": {},
+      "github": "https://github.com/GNGscr/IceOfCream"
     }
   ];
 
@@ -281,24 +283,29 @@ const Section2 = ({ scrollYProgress, scrollYProgressEndStart, media }) => {
               {
                 projects.map(({link, image, title}, index) => {
                   return (
-                    <a key={index} className="proj-a" href={link} target="_blank" rel="noopener noreferrer">
-                      <div className="proj-card"
-                        style={{
-                          backgroundPosition: 'center',
-                          borderRadius: '0.85rem',
-                          backgroundImage: `url(${image})`,
-                          backgroundSize: "contain",
-                          backgroundRepeat: 'no-repeat',
-                      }}>
-                        <motion.div
-                          className="proj-title"
-                          initial={{ opacity: 0 }}
-                          whileInView={{ opacity: 0.9 }}
-                          transition={{ duration: 1.15, delay: 4.15 }}
-                        >{title}
-                        </motion.div>
+                    <div key={index} className="proj-card-wrapper">
+                      <a className="proj-a" href={link} target="_blank" rel="noopener noreferrer">
+                        <div className="proj-card"
+                          style={{
+                            backgroundPosition: 'center',
+                            borderRadius: '0.85rem',
+                            backgroundImage: `url(${image})`,
+                            backgroundSize: "contain",
+                            backgroundRepeat: 'no-repeat',
+                        }}>
+                          <motion.div
+                            className="proj-title"
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 0.9 }}
+                            transition={{ duration: 1.15, delay: 4.15 }}
+                          >{title}
+                          </motion.div>
+                        </div>
+                      </a>
+                      <div className="proj-card-github">
+                        <a href={projects[index].github} target="_blank" rel="noopener noreferrer">Go to Github repository</a>
                       </div>
-                    </a>
+                    </div>
                   )
                 })
               }

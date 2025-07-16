@@ -352,11 +352,36 @@ button:focus {
   z-index: 9 !important;
   max-width: 100%;
   margin-top: -1.5rem;
-  margin-left: -2.5rem;
+  margin-left: 0rem;
+}
+
+.proj-card-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+}
+.proj-card-github {
+  color: #fff;
+  font-family: var(--secondary-font);
+  text-transform: uppercase;
+  width: 100% !important;
+  text-align: center;
+  padding: 0.25rem 0;
+  padding-top: 0rem;
+}
+.projects-inner-content > div > div > a {
+  transition: all 0.3s ease;
+  text-underline-offset: 5px;
+}
+.projects-inner-content > div > div > a:hover {
+  text-decoration: underline;
 }
 
 a.proj-a {
-  width: 100%;
+  min-width: 420px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
   border-radius: 1.85rem;
   transition: .3s ease;
@@ -369,7 +394,7 @@ a.proj-a:hover {
 
 .proj-card {
   height: 227.5px;
-  width: 110%;
+  width: 100%;
 }
 
 .clip-path {
@@ -394,11 +419,12 @@ a.proj-a:hover {
 
 .proj-title {
   position: relative;
-  font-size: 4.5rem;
+  font-size: 3.25rem;
   font-weight: 800;
   color: rgb(252 165 165);
   transition: .3s ease;
   text-shadow: 5px 10px 10px rgba(0, 0, 0, 0.15);
+  padding: 3rem;
 }
 
 a.proj-a:hover .proj-title {
@@ -747,5 +773,8 @@ a.proj-a:hover .proj-title {
 
   #pull-line {
     top: 12rem;
+  }
+  .proj-card-github {
+    padding-top: 1rem;
   }
 }
