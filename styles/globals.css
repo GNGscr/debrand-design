@@ -495,6 +495,10 @@ a.proj-a:hover .proj-title {
   text-underline-offset: 3px;
 }
 
+.not-found-dolphin-animation > div > div {
+  background: none !important;
+}
+
 
 /* MOBILE MEDIA */
 
