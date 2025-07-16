@@ -71,6 +71,11 @@ const Section1 = ({scrollYProgress, media}) => {
                     <div className="about-me-title mt-[2rem] mb-[1rem] text-[1.5rem] flex flex-wrap w-[25rem]">
                     In the last 5 years I worked with Forter. Contributing to the team effort, migrating old code to new, doing face lifts, refactoring, creating in house tools for the company. In some projects doing UX/UI, design and development.
                     </div>
+                    <a
+                      className="my-linkedin text-lg text-blue-300 hover:text-blue-200"
+                      href="https://linkedin.com/in/daniel-ehrlich-36a389136">
+                        Go to my Linkedin profile {' >'}
+                    </a>
                 </div>
             </div>
         </motion.div>

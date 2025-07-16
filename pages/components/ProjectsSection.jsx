@@ -28,11 +28,13 @@ export default function ProjectsSection({ media, container }) {
       title: "Thaiislands",
       link: "https://thaiislands.vercel.app/about",
       image: thaiIslandsImg.src,
+      github: "https://github.com/GNGscr/Thaiislands"
     },
     {
       title: "Ice Of Cream",
       link: "https://ice-of-cream.vercel.app/",
       image: iceOfCreamImg.src,
+      github: "https://github.com/GNGscr/IceOfCream"
     }
   ];
 

@@ -476,6 +476,22 @@ a.proj-a:hover .proj-title {
   height: 100%;
 }
 
+.right-section {
+  height: 62vh;
+  position: relative;
+}
+
+.my-linkedin {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.my-linkedin:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 
 /* MOBILE MEDIA */
 
@@ -593,6 +609,8 @@ a.proj-a:hover .proj-title {
     padding: 0 3rem;
     font-family: var(--main-font);
   }
+
+
 
   .about-me-title {
     width: 20rem;
