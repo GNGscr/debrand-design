@@ -12,7 +12,12 @@
 
 ## 📸 Preview
 
-![Debrand design Preview](./public/images/screenshot.png)
+![Debrand Preview](./public/images/screenshot.png)
+
+## 🎥 Live Preview
+[Debrand user flow Preview (MP4)](./public/images/debrand-user-flow-vid.mp4)
+
+---
 
 **Live site:** [https://debrand-design.vercel.app](https://debrand-design.vercel.app)  
 **Code:** [GitHub Repository](https://github.com/GNGscr/debrand-design)
