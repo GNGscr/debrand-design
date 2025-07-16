@@ -792,8 +792,18 @@ a.proj-a:hover .proj-title {
   #pull-line {
     top: 12rem;
   }
+
+  .sentence {
+    display: none;
+  }
+
   .proj-card-github {
     padding-top: 10px;
     font-size: 1rem;
+  }
+  
+  .back-home {
+    position: relative;
+    top: 5rem;
   }
 }
