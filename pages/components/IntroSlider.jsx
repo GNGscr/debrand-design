@@ -30,8 +30,8 @@ export default function IntroSlider({ media }) {
         className={`h-[100%] min-h-screen p-4 md:p-20 bg-gray-50 absolute top-0 left-0
           z-10 w-full flex flex-col gap-4 md:gap-10 tracking-tight justify-start`}>
           <h1 id="title-1" className="text-4xl md:text-9xl font-bold">Software Engineer</h1>
-          <h1 id="title-2" className="text-4xl md:text-9xl font-bold">Designer</h1>
-          <h1 id="title-3" className="text-4xl md:text-9xl font-bold">Freelanser</h1>
+          <h1 id="title-2" className="text-4xl md:text-9xl font-bold">Creative Developer</h1>
+          <h1 id="title-3" className="text-4xl md:text-9xl font-bold">Full Stack 70 ~ 30</h1>
       </motion.div>
       <div 
         style={{clipPath: "polygon(0% 0, 100% 0, 100% 100%, 0 100%)"}} 
