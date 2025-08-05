@@ -60,13 +60,13 @@ export default function IntroSlider({ media, setOverlow }) {
           z-10 w-full flex flex-col gap-4 md:gap-10 tracking-tight justify-start`}
       >
         <h1 id="title-1" className="text-4xl md:text-9xl font-bold">
-          Software Engineer
+          Full Stack
         </h1>
         <h1 id="title-2" className="text-4xl md:text-9xl font-bold">
-          Creative Developer
+          Frontend ~ 70%
         </h1>
         <h1 id="title-3" className="text-4xl md:text-9xl font-bold">
-          Full Stack 70 ~ 30
+          Backend ~ 30%
         </h1>
       </motion.div>
       <div
